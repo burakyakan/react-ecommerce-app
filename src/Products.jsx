@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import style from './Products.module.css'
+import style from './Product.module.css'
 
-function Products(props) {
+function Product(props) {
 
   function addToBasket() {
     return;
@@ -11,13 +11,30 @@ function Products(props) {
 
   }
 
+  function formatPrice(){
+    const formattedPrice = props.price.toLocaleString('tr-TR', {
+      style: 'decimal',
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    })
+    return formattedPrice + " TL";
+  }
+
 
   return (
     <div className={style.container}>
-      <img src={props.img} alt={props.title} />
+      <img src={props.imgUrl} alt={props.title} />
+      <p className={style.brand}>{props.brand}</p>
       <p className={style.title}>{props.title}</p>
-      <p className={style.rating}>{props.rating}</p>
-      <p className={style.price}>{props.price}</p>
+      <div>
+        <span>{props.ram} GB • {props.rom} GB • {props.color}</span>
+      </div>
+      <div>
+        <span className={style.rating}>{props.ratingStars}</span>
+        <span> {props.ratingNumber}</span>
+      </div>
+      
+      <p className={style.price}>{formatPrice()}</p>
       <button className={style.addToBasketButton} onClick={addToBasket}>Add to Basket</button>
       <button className={style.addToFavoritesButton} onClick={addToFavorites}>Add to Favorites</button>
       
@@ -25,4 +42,4 @@ function Products(props) {
   );
 
 }
-export default Products
+export default Product

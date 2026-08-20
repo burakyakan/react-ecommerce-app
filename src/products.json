@@ -1,9 +1,10 @@
 [
   {
     "id": 1,
+    "category": "Telefon",
     "brand": "Samsung",
-    "title": "Samsung Galaxy S26 256GB",
-    "imgUrl": "/product_images/s26-kobalt-mor.jpg",
+    "title": "Galaxy S26",
+    "imgUrl": "/product_images/samsung-s26-kobalt-mor.jpg",
     "price": 58799.00,
     "ram": 12,
     "rom": 256,
@@ -13,9 +14,10 @@
   },
   {
     "id": 2,
+    "category": "Telefon",
     "brand": "Apple",
-    "title": "iPhone 17 Pro 128GB",
-    "imgUrl": "/product_images/iphone17-sis-mavisi.jpg",
+    "title": "iPhone 17",
+    "imgUrl": "/product_images/apple-iphone17-sis-mavisi.jpg",
     "price": 74999.00,
     "ram": 8,
     "rom": 256,
@@ -25,9 +27,10 @@
   },
   {
     "id": 3,
+    "category": "Telefon",
     "brand": "Samsung",
     "title": "Galaxy Z Fold 8 Ultra",
-    "imgUrl": "/product_images/z-fold-8-ultra-grafit-gri.jpg",
+    "imgUrl": "/product_images/samsung-z-fold-8-ultra-grafit-gri.jpg",
     "price": 151999.00,
     "ram": 12,
     "rom": 256,
@@ -37,14 +40,28 @@
   },
   {
     "id": 4,
+    "category": "Telefon",
     "brand": "Huawei",
     "title": "Mate X7",
-    "imgUrl": "/product_images/mate-x7-siyah.jpg",
+    "imgUrl": "/product_images/huawei-mate-x7-siyah.jpg",
     "price": 110999.00,
     "ram": 16,
     "rom": 512,
     "color": "Siyah",
     "ratingStars": "★★★★★",
     "ratingNumber": 5
+  },
+  {
+    "id": 5,
+    "category": "Telefon",
+    "brand": "Xiaomi",
+    "title": "17",
+    "imgUrl": "/product_images/xiaomi-17-siyah.jpg",
+    "price": 70999.00,
+    "ram": 12,
+    "rom": 512,
+    "color": "Siyah",
+    "ratingStars": "★★★★☆",
+    "ratingNumber": 4.1
   }
 ]

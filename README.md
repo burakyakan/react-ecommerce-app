@@ -1,5 +1,5 @@
 # React + JavaScript E-Commerce Web App
-#### by Burak Yakan – [yakan.dev]
+#### by Burak Yakan – [yakan.dev](https://yakan.dev/)
 
 I am currently building this E-Commerce App (only frontend) to practice my freshly-learned react skills. Feel free to take a look at what I've done so far.
 
