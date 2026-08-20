@@ -11,9 +11,9 @@ function Home() {
   return (
     <>
       {
-        productsData.map(({ id, brand, title, imgUrl, price, ram, rom, color, ratingStars, ratingNumber }) => (
+        productsData.map(({ id, brand, title, imgUrl, price, ram, rom, color, rating }) => (
           <Product key={id} brand={brand} title={title} imgUrl={imgUrl} price={price}
-            ram={ram} rom={rom} color={color} ratingStars={ratingStars} ratingNumber={ratingNumber}></Product>
+            ram={ram} rom={rom} color={color} rating={rating}></Product>
         ))
       }
     </>

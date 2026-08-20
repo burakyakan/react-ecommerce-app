@@ -9,8 +9,7 @@
     "ram": 12,
     "rom": 256,
     "color": "Kobalt Mor",
-    "ratingStars": "★★★★☆",
-    "ratingNumber": 4.2
+    "rating": 4.2
   },
   {
     "id": 2,
@@ -22,8 +21,7 @@
     "ram": 8,
     "rom": 256,
     "color": "Sis Mavisi",
-    "ratingStars": "★★★★⯪",
-    "ratingNumber": 4.8
+    "rating": 4.8
   },
   {
     "id": 3,
@@ -35,8 +33,7 @@
     "ram": 12,
     "rom": 256,
     "color": "Grafit Gri",
-    "ratingStars": "★★★★⯪",
-    "ratingNumber": 4.7
+    "rating": 4.7
   },
   {
     "id": 4,
@@ -48,8 +45,7 @@
     "ram": 16,
     "rom": 512,
     "color": "Siyah",
-    "ratingStars": "★★★★★",
-    "ratingNumber": 5
+    "rating": 5
   },
   {
     "id": 5,
@@ -61,7 +57,6 @@
     "ram": 12,
     "rom": 512,
     "color": "Siyah",
-    "ratingStars": "★★★★☆",
-    "ratingNumber": 4.1
+    "rating": 4.1
   }
 ]
