@@ -1,16 +1,12 @@
-# React + Vite
+# React + JavaScript E-Commerce Web App
+#### by Burak Yakan – [yakan.dev]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I am currently building this E-Commerce App (only frontend) to practice my freshly-learned react skills. Feel free to take a look at what I've done so far.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Check My Other Projects!
 
-## React Compiler
+- Typing Test App (HTML, CSS & JavaScript) [@burakyakan/typing-test] – [typingtest.yakan.dev]
+- Currency Converter App (HTML, CSS & JavaScript) [@burakyakan/currency-converter-app] – [currency.yakan.dev]
+- Weather App (HTML, CSS & JavaScript) [@burakyakan/weather-app] – [weather.yakan.dev]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
