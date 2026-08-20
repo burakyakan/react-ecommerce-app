@@ -6,7 +6,7 @@ I am currently building this E-Commerce App (only frontend) to practice my fresh
 
 ### Check My Other Projects!
 
-- **Typing Test App** *(HTML, CSS & JavaScript)* — [GitHub](https://github.com/burakyakan/typing-test) | [Live Demo](https://typingtest.yakan.dev/)
-- Currency Converter App (HTML, CSS & JavaScript) [@burakyakan/currency-converter-app] – [currency.yakan.dev]
-- Weather App (HTML, CSS & JavaScript) [@burakyakan/weather-app] – [weather.yakan.dev]
+- **Typing Test App** *(HTML, CSS & JavaScript)* – [GitHub](https://github.com/burakyakan/typing-test) | [Live Demo](https://typingtest.yakan.dev/)
+- **Currency Converter App** *(HTML, CSS & JavaScript)* – [GitHub](https://github.com/burakyakan/currency-converter-app) | [Live Demo](https://currency.yakan.dev/)
+- **Weather App** *(HTML, CSS & JavaScript)* – [GitHub](https://github.com/burakyakan/weather-app) | [Live Demo](https://weather.yakan.dev/)
 
