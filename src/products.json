@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "brand": "Samsung",
+    "title": "Samsung Galaxy S26 256GB",
+    "imgUrl": "/product_images/s26-kobalt-mor.jpg",
+    "price": 58799.00,
+    "ram": 12,
+    "rom": 256,
+    "color": "Kobalt Mor",
+    "ratingStars": "★★★★☆",
+    "ratingNumber": 4.2
+  },
+  {
+    "id": 2,
+    "brand": "Apple",
+    "title": "iPhone 17 Pro 128GB",
+    "imgUrl": "/product_images/iphone17-sis-mavisi.jpg",
+    "price": 74999.00,
+    "ram": 8,
+    "rom": 256,
+    "color": "Sis Mavisi",
+    "ratingStars": "★★★★⯪",
+    "ratingNumber": 4.8
+  },
+  {
+    "id": 3,
+    "brand": "Samsung",
+    "title": "Galaxy Z Fold 8 Ultra",
+    "imgUrl": "/product_images/z-fold-8-ultra-grafit-gri.jpg",
+    "price": 151999.00,
+    "ram": 12,
+    "rom": 256,
+    "color": "Grafit Gri",
+    "ratingStars": "★★★★⯪",
+    "ratingNumber": 4.7
+  },
+  {
+    "id": 4,
+    "brand": "Huawei",
+    "title": "Mate X7",
+    "imgUrl": "/product_images/mate-x7-siyah.jpg",
+    "price": 110999.00,
+    "ram": 16,
+    "rom": 512,
+    "color": "Siyah",
+    "ratingStars": "★★★★★",
+    "ratingNumber": 5
+  }
+]

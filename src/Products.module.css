@@ -1,0 +1,58 @@
+img {
+    width: 300px;
+    height: 370px;
+    margin-bottom: 10px;
+}
+
+.container {
+    border: 3px solid rgb(251, 251, 251);
+    width: 30%;
+    margin: 30px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 35px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    padding-top: 30px;
+}
+
+.title {
+    color: rgb(45, 45, 45);
+}
+
+.rating {
+    color: rgb(245, 218, 97);
+}
+
+.addToBasketButton {
+    background-color: rgb(247, 191, 37);
+    color: rgb(45, 45, 45);
+    border: none;
+    border-radius: 10px;
+    padding: 6px 10px;
+    margin: 10px 5px;
+    transition: 0.3s ease;
+    width: 120px;
+    cursor: pointer;
+}
+
+.addToBasketButton:hover {
+    background-color: rgb(219, 170, 34);
+}
+
+.addToFavoritesButton {
+    background-color: rgb(243, 78, 78);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 6px 10px;
+    margin: 10px 5px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.addToFavoritesButton:hover {
+    background-color: rgb(203, 65, 65);
+    transition: 0.3s ease;
+}
