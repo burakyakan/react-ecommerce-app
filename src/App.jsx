@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Header from './Header.jsx'
 import Home from './Home.jsx'
+import Footer from './Footer.jsx'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Header></Header>
       <Home></Home>
+      <Footer></Footer>
     </div>
     
 
@@ -16,3 +18,4 @@ function App() {
 }
 
 export default App
+// #6b6375 güzel bi renk

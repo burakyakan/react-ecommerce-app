@@ -3,6 +3,7 @@ img {
     height: 370px;
     margin-bottom: 10px;
     object-fit: contain;
+    cursor: pointer;
 }
 
 .container {

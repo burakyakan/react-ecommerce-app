@@ -1,0 +1,21 @@
+footer {
+    text-align: center;
+    background-color: #e6e6e6;
+    border-top: 1px solid #e2e1e4;
+    height: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: #02225D;
+    margin: 10px;
+
+    &:hover {
+        color: #01112e;
+    }
+    
+}
+
+p {
+    
+}

@@ -142,5 +142,101 @@
     "rom": 1024,
     "color": "Beyaz",
     "rating": 4.4
+  },
+  {
+    "id": 13,
+    "category": "Telefon",
+    "brand": "Nothing",
+    "title": "Phone (4a)",
+    "imgUrl": "/product_images/nothing-phone-4a-siyah.jpg",
+    "price": 41799.00,
+    "ram": 12,
+    "rom": 256,
+    "color": "Siyah",
+    "rating": 3.2
+  },
+  {
+    "id": 14,
+    "category": "Tablet",
+    "brand": "Apple",
+    "title": "iPad Pro M5 11\" WiFi + Cellular",
+    "imgUrl": "/product_images/apple-ipad-pro-m5-11-uzay-siyahı.jpg",
+    "price": 82999.00,
+    "ram": 12,
+    "rom": 256,
+    "color": "Uzay Siyahı",
+    "rating": 4.3
+  },
+  {
+    "id": 15,
+    "category": "Laptop",
+    "brand": "Apple",
+    "title": "MacBook Pro M5 Pro 14\"",
+    "imgUrl": "/product_images/apple-macbook-pro-m5-pro-14-uzay-siyahı.jpg",
+    "price": 148499.00,
+    "ram": 24,
+    "rom": 1024,
+    "color": "Uzay Siyahı",
+    "rating": 4.6
+  },
+  {
+    "id": 16,
+    "category": "Laptop",
+    "brand": "Apple",
+    "title": "MacBook Neo",
+    "imgUrl": "/product_images/apple-macbook-neo-puslu-sarı.jpg",
+    "price": 148499.00,
+    "ram": 8,
+    "rom": 512,
+    "color": "Puslu Sarı",
+    "rating": 2.3
+  },
+  {
+    "id": 17,
+    "category": "Akıllı Saat",
+    "brand": "Apple",
+    "title": "Watch",
+    "imgUrl": "/product_images/apple-watch-11-46-siyah.jpg",
+    "price": 21999.00,
+    "ram": 1,
+    "rom": 64,
+    "color": "Siyah",
+    "rating": 1.7
+  },
+  {
+    "id": 18,
+    "category": "Konsol",
+    "brand": "Sony",
+    "title": "PlayStation 5 Slim Digital & Çift DualSense 5",
+    "imgUrl": "/product_images/sony-playstation-5-slim-digital-2-kumanda.jpg",
+    "price": 37499.00,
+    "ram": 16,
+    "rom": 825,
+    "color": "Siyah",
+    "rating": 4.9
+  },
+  {
+    "id": 19,
+    "category": "Kulaklık",
+    "brand": "Apple",
+    "title": "AirPods 4. Nesil ANC",
+    "imgUrl": "/product_images/apple-airpods-4.jpg",
+    "price": 9999.00,
+    "ram": 1,
+    "rom": 825,
+    "color": "Beyaz",
+    "rating": 4.8
+  },
+  {
+    "id": 20,
+    "category": "Kulaklık",
+    "brand": "Apple",
+    "title": "AirPods Max 2",
+    "imgUrl": "/product_images/apple-airpods-max-2-gece-yarısı.jpg",
+    "price": 31999.00,
+    "ram": 1,
+    "rom": 825,
+    "color": "Gece Yarısı",
+    "rating": 4.4
   }
 ]
