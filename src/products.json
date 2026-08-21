@@ -16,7 +16,7 @@
     "category": "Telefon",
     "brand": "Apple",
     "title": "iPhone 17",
-    "imgUrl": "/product_images/apple-iphone17-sis-mavisi.jpg",
+    "imgUrl": "/product_images/apple-iphone-17-sis-mavisi.jpg",
     "price": 74999.00,
     "ram": 8,
     "rom": 256,
@@ -58,5 +58,89 @@
     "rom": 512,
     "color": "Siyah",
     "rating": 4.1
+  },
+  {
+    "id": 6,
+    "category": "Telefon",
+    "brand": "Apple",
+    "title": "iPhone Air",
+    "imgUrl": "/product_images/apple-iphone-air-siyah.jpg",
+    "price": 81699.00,
+    "ram": 12,
+    "rom": 256,
+    "color": "Siyah",
+    "rating": 4.5
+  },
+  {
+    "id": 7,
+    "category": "Telefon",
+    "brand": "Apple",
+    "title": "iPhone 17 Pro",
+    "imgUrl": "/product_images/apple-iphone-17-pro-kozmik-turuncu.jpg",
+    "price": 108499.00,
+    "ram": 12,
+    "rom": 256,
+    "color": "Kozmik Turuncu",
+    "rating": 4.4
+  },
+  {
+    "id": 8,
+    "category": "Telefon",
+    "brand": "Apple",
+    "title": "iPhone 17 Pro",
+    "imgUrl": "/product_images/apple-iphone-17-pro-abis.jpg",
+    "price": 119999.00,
+    "ram": 12,
+    "rom": 512,
+    "color": "Abis",
+    "rating": 4.4
+  },
+  {
+    "id": 9,
+    "category": "Telefon",
+    "brand": "Samsung",
+    "title": "Z Flip 8",
+    "imgUrl": "/product_images/samsung-z-flip-8-pembe.jpg",
+    "price": 102999.00,
+    "ram": 12,
+    "rom": 512,
+    "color": "Pembe",
+    "rating": 3.9
+  },
+  {
+    "id": 10,
+    "category": "Telefon",
+    "brand": "Huawei",
+    "title": "Pura 80 Ultra",
+    "imgUrl": "/product_images/huawei-pura-80-ultra-titan-altın.jpg",
+    "price": 88299.00,
+    "ram": 16,
+    "rom": 512,
+    "color": "Titan Altın",
+    "rating": 4.8
+  },
+  {
+    "id": 11,
+    "category": "Telefon",
+    "brand": "Samsung",
+    "title": "Galaxy Z Fold 8",
+    "imgUrl": "/product_images/samsung-z-fold-8-lavanta.jpg",
+    "price": 123499.00,
+    "ram": 12,
+    "rom": 512,
+    "color": "Lavanta",
+    "rating": 4.6
+  },
+  {
+    "id": 12,
+    "category": "Telefon",
+    "brand": "Samsung",
+    "title": "Galaxy S26 Ultra",
+    "imgUrl": "/product_images/samsung-s26-ultra-beyaz.jpg",
+    "price": 113999.00,
+    "ram": 16,
+    "rom": 1024,
+    "color": "Beyaz",
+    "rating": 4.4
   }
 ]

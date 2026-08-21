@@ -2,20 +2,22 @@ img {
     max-width: 300px;
     height: 370px;
     margin-bottom: 10px;
+    object-fit: contain;
 }
 
 .container {
     border: 3px solid rgb(251, 251, 251);
-    width: 30%;
-    height: 530px; /* */
-    margin: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    
+    margin: 0;
     padding: 20px;
     justify-content: center;
     text-align: center;
     border-radius: 35px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: white;
-    padding-top: 30px;
+    padding-top: 30px;  
 }
 
 .title {
@@ -40,6 +42,11 @@ img {
 
 .addToBasketButton:hover {
     background-color: rgb(219, 170, 34);
+}
+
+.added {
+    color: white;
+    
 }
 
 .addToFavoritesButton {

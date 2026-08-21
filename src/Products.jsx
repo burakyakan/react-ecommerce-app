@@ -8,7 +8,7 @@ function Product(props) {
   }
 
   function addToFavorites() {
-
+    
   }
 
   function addRatingStars() {

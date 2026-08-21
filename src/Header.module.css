@@ -1,0 +1,15 @@
+header {
+    
+}
+
+h1 {
+    text-align: left;
+    
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-align: right;
+}
