@@ -46,8 +46,17 @@ function Product(props) {
       <img src={props.imgUrl} alt={props.title} />
       <p className={style.brand}>{props.brand}</p>
       <p className={style.title}>{props.title}</p>
-      <div>
-        <span>{props.ram} GB • {props.rom} GB • {props.color}</span>
+      <div className={style.specs}>
+        {props.watchSize && <span>{props.watchSize} mm</span>}
+        {props.ram && <span>{props.ram} GB</span>}
+        {props.rom && <span>{props.rom} GB</span>}
+        {props.screenSize && <span>{props.screenSize}"</span>}
+        {props.connectivity && <span>{props.connectivity}</span>}
+        {props.screenResolution && <span>{props.screenResolution}</span>}
+        {props.screenRefreshRate && <span>{props.screenRefreshRate} Hz</span>}
+        {props.anc && <span>{props.anc ? "ANC" : null}</span>}
+        {props.connectionType && <span>{props.connectionType}</span>}
+        {props.color && <span>{props.color}</span>}
       </div>
       <div>
         <span className={style.ratingStars}>{addRatingStars()}</span>

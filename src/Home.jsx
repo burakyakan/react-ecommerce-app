@@ -31,9 +31,10 @@ function Home() {
 
       <div className={style.home}>
         {
-          filteredProducts.map(({ id, brand, title, imgUrl, price, ram, rom, color, rating }) => (
+          filteredProducts.map(({ id, brand, title, imgUrl, price, ram, rom, color, rating, screenSize, screenResolution, screenRefreshRate, anc, connectionType, watchSize, connectivity }) => (
             <Product key={id} brand={brand} title={title} imgUrl={imgUrl} price={price}
-              ram={ram} rom={rom} color={color} rating={rating}></Product>
+              ram={ram} rom={rom} color={color} rating={rating} screenSize={screenSize} screenResolution={screenResolution}
+              screenRefreshRate={screenRefreshRate} anc={anc} connectionType={connectionType} watchSize={watchSize} connectivity={connectivity}></Product>
           ))
         }
       </div>

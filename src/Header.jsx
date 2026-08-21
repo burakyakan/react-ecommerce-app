@@ -5,7 +5,7 @@ function Header() {
 
   return (
     <header>
-      <h1>Technostore</h1>
+      <h1>BirazıBurada</h1>
       <nav>
         <ul>
           <li><a href="#">Telefon</a></li>

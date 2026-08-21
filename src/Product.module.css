@@ -65,3 +65,7 @@ img {
     background-color: rgb(203, 65, 65);
     transition: 0.3s ease;
 }
+
+.specs span:not(:last-child)::after {
+  content: " • ";
+}
