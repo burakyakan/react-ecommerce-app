@@ -43,3 +43,23 @@ ul {
 .logoText {
   color: #65522d !important;
 }
+
+.logoWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 50px;
+}
+
+.searchWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.menuWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
