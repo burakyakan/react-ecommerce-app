@@ -295,6 +295,7 @@
     "title": "AirTag 2. Nesil",
     "imgUrl": "/product_images/apple-airtag-gen-2.jpg",
     "price": 1469.00,
+    "platform": "iOS, iPadOS",
     "color": "Beyaz",
     "rating": 4.7
   },
@@ -353,6 +354,7 @@
     "title": "AirTag 2. Nesil (4'lü Paket)",
     "imgUrl": "/product_images/apple-airtag-gen-2-pack-of-4.jpg",
     "price": 4749.00,
+    "platform": "iOS, iPadOS",
     "color": "Beyaz",
     "rating": 4.6
   },
@@ -374,6 +376,7 @@
     "title": "DualSense 5",
     "imgUrl": "/product_images/sony-dualsense-5-beyaz.jpg",
     "price": 4499.00,
+    "platform": "PlayStation 5",
     "color": "Beyaz",
     "rating": 4.4
   },

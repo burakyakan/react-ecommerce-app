@@ -8,9 +8,9 @@ function Header() {
       <h1>BirazıBurada</h1>
       <nav>
         <ul>
-          <li><a href="#">Sepet</a></li>
-          <li><a href="#">Hesabım</a></li>
           <input className={style.searchBar} type="search" placeholder='Ürün, Kategori veya Marka Ara' />
+          <a href="#">Sepet</a>
+          <a href="#">Hesabım</a>
         </ul>
       </nav>
     </header>

@@ -6,8 +6,9 @@
   gap: 10px;
 }
 
+
 .categoryButton {
-  background-color: rgb(85, 81, 81);
+  /*background-color: rgb(85, 81, 81);
   padding: 3px 5px;
   margin: 0;
   width: 130px;
@@ -18,10 +19,18 @@
   border-radius: 30px;
   border: 1px solid rgb(49, 49, 49);
   display: inline-block;
+  cursor: pointer; */
+
+  border: none;
+  font-size: 22px;
+  color: #353935;
+  background: none;
+  font-weight: bold;
   cursor: pointer;
 }
 
+
 .categoryButton:hover {
-  color: white;
+  color: #696a69;
 }
 

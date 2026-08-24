@@ -3,6 +3,8 @@ import style from './Footer.module.css'
 
 function Footer() {
 
+  const date = new Date().getFullYear();
+
   return (
     <footer>
       <span>
@@ -12,8 +14,16 @@ function Footer() {
         <span> | </span>
         <a href="#">Site Haritası</a>
       </span>
+      <div>
+        
+      </div>
+
+
+
+
+
       <div className={style.copyrightFooter}>
-        <p>&copy; 2026 Burak Yakan - Tüm hakları saklıdır.</p>
+        <p>&copy; {date} Burak Yakan – Tüm hakları saklıdır.</p>
       </div>
     </footer>
   );
