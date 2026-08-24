@@ -6,12 +6,13 @@ function AnnouncementBar() {
   const announcements = [
     "5000 TL ve Üstü Alışverişe Kargo Bedava!",
     "Nefes Kesici Yenilik: Yeni iPhone 17 ve iPhone 17 Pro Serisini Keşfedin!",
-    "Seçili Kredi Kartlarına 12 Ay'a Kadar Vade Farksız Taksit İmkanı",
+    "Seçili Kredi Kartlarına 12 Aya Kadar Vade Farksız Taksit İmkânı",
     "Saat 14.00'a Kadar Verilen Siparişlerde Aynı Gün Kargo!",
     "Yeni Üyelere Özel HOSGELDIN10 Kodu ile Tüm Ürünlerde %10 İndirim! *",
     "İstanbul, Ankara ve İzmir İçi Aynı Gün Teslimat İmkanı",
     "Yeni MacBook Neo. Harika bir Mac, harikulade bir fiyatla.",
-    "🎓 Eğitime Özel Fırsatlar Başladı! MacBook ve iPad’lerde Öğrenci İndirimini Kaçırma!"
+    "🎓 Eğitime Özel Fırsatlar Başladı! MacBook ve iPad’lerde Öğrenci İndirimini Kaçırma!",
+    "BirazıBurada 3. Gününü Kutluyor! 3. Gündönümüne Özel Tüm Ürünlerde Geçerli Ekstra %3 İndirim!"
 
     
   ];

@@ -24,6 +24,7 @@
   border: none;
   font-size: 22px;
   color: #353935;
+  color: #C5A059;
   background: none;
   font-weight: bold;
   cursor: pointer;
@@ -31,6 +32,6 @@
 
 
 .categoryButton:hover {
-  color: #696a69;
+  color: #91743f;
 }
 

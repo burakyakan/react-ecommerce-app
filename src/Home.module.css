@@ -3,7 +3,7 @@
   justify-content: center;
   padding: 15px 24px 15px;
   border-bottom: 1px solid #c2c2c2;
-  background-color: rgb(252, 252, 252);
+  background-color: #F9F9F8;
   margin-bottom: 15px;
 }
 
@@ -52,4 +52,30 @@
   .home {
     grid-template-columns: 1fr;
   }
+}
+
+.sortSelect {
+  border: 1px solid #c2c2c2;
+  padding: 8px 60px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: normal;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-align: center;
+  text-align-last: center;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5MTc0M2YiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1hcnJvdy1kb3duLXVwLWljb24gbHVjaWRlLWFycm93LWRvd24tdXAiPjxwYXRoIGQ9Im0zIDE2IDQgNCA0LTQiLz48cGF0aCBkPSJNNyAyMFY0Ii8+PHBhdGggZD0ibTIxIDgtNC00LTQgNCIvPjxwYXRoIGQ9Ik0xNyA0djE2Ii8+PC9zdmc+");
+  background-repeat: no-repeat;
+  background-position: right 20px center; 
+  background-size: 24px 24px;
+  color: #2d2d2d
+}
+
+
+
+.sortSelect:focus {
+  border: 1px solid #91743f;
+  outline: none;
 }

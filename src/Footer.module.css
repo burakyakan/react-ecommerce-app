@@ -11,11 +11,11 @@ footer {
 
 a {
     text-decoration: none;
-    color: #02225D;
+    color: #65522d;
     margin: 10px;
 
     &:hover {
-        color: #01112e;
+        color: #362a13;
     }
     
 }
@@ -26,7 +26,7 @@ a {
   text-align: center;
   justify-content: center;
   height: 40px;
-  background-color: #0b1c3b;
+  background-color: #081836;
   margin-top: auto;
   border-top: 1px solid #c2c2c2;
   color: rgba(255, 255, 255, 0.904);

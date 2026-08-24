@@ -5,7 +5,7 @@ function Header() {
 
   return (
     <header>
-      <h1>BirazıBurada</h1>
+      <h1><a href="#" className={style.logoText}>birazıburada</a></h1>
       <nav>
         <ul>
           <input className={style.searchBar} type="search" placeholder='Ürün, Kategori veya Marka Ara' />
