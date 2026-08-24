@@ -8,12 +8,11 @@ function Header() {
       <h1>BirazıBurada</h1>
       <nav>
         <ul>
-          <li><a href="#">Telefon</a></li>
-          <li><a href="#">Tablet</a></li>
-          <li><a href="#">Bilgisayar</a></li>
+          <li><a href="#">Sepet</a></li>
+          <li><a href="#">Hesabım</a></li>
+          <input className={style.searchBar} type="search" placeholder='Ürün, Kategori veya Marka Ara' />
         </ul>
       </nav>
-      <a href="#">Sepet</a>
     </header>
   );
 

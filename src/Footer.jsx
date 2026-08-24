@@ -5,7 +5,6 @@ function Footer() {
 
   return (
     <footer>
-      <p>Burak Yakan &copy; 2026</p>
       <span>
         <a href="#">Gizlilik Sözleşmesi</a>
         <span> | </span>
@@ -13,6 +12,9 @@ function Footer() {
         <span> | </span>
         <a href="#">Site Haritası</a>
       </span>
+      <div className={style.copyrightFooter}>
+        <p>&copy; 2026 Burak Yakan - Tüm hakları saklıdır.</p>
+      </div>
     </footer>
   );
 

@@ -1,6 +1,9 @@
 header {
-border-bottom: 1px solid #e2e1e4;
+border-bottom: 1px solid #c2c2c2;
+border-top: 1px solid #c2c2c2;
 background-color: #ececed;
+margin: 0;
+/* #e2e1e4 */
 }
 
 h1 {
@@ -15,4 +18,9 @@ ul {
     text-align: right;
 }
 
-
+.searchBar {
+  padding: 10px;
+  width: 300px;
+  border: 1px rgb(194, 194, 194) solid;
+  border-radius: 50px;
+}
