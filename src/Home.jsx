@@ -18,6 +18,10 @@ function Home() {
 
   const filteredProducts = category === "all" ? productsData : productsData.filter(item => item.category === category);
 
+  //buraya search bara yazılıp enterlanan şeyleri de dahil et. Laptop diye kocaman yazan yere de 'Arama Sonuçları: "bla bla bla"' diye yaz
+
+
+
   const sortedProducts = useMemo(() => {
     return [...filteredProducts].sort((a, b) => {
       if (sortType === "priceAsc") return a.price - b.price;
