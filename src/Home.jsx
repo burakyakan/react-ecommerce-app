@@ -25,6 +25,8 @@ function Home() {
   }
 
   const categoryFilteredProducts = category === "all" ? productsData : productsData.filter(item => item.category === category);
+  const availableBrands = [...new Set(categoryFilteredProducts.map(item => item.brand).filter(Boolean))].sort();
+  const availableColors = [...new Set(categoryFilteredProducts.map(item => item.color).filter(Boolean))].sort();
 
   const searchFilteredProducts = categoryFilteredProducts.filter(item => {
     const searchTerm = inCategorySearchTerm.toLowerCase().trim().split(/\s+/);
@@ -90,16 +92,18 @@ function Home() {
         <div>
           <select className={style.brandSelect} value={selectedBrand} onChange={(e) => setSelectedBrand(e.target.value)}>
             <option value="">Marka</option>
-            <option value="Apple">Apple</option>
-            <option value="Samsung">Samsung</option>
+            {availableBrands.map(brand => (
+              <option key={brand} value={brand}>{brand}</option>
+            ))}
           </select>
         </div>
 
         <div>
           <select className={style.colorSelect} value={selectedColor} onChange={(e) => setSelectedColor(e.target.value)}>
             <option value="">Renk</option>
-            <option value="Beyaz">Beyaz</option>
-            <option value="Siyah">Siyah</option>
+            {availableColors.map(color => (
+              <option key={color} value={color}>{color}</option>
+            ))}
           </select>
         </div>
 
