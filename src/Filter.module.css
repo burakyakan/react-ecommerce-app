@@ -40,3 +40,16 @@
   padding-right: 15px;
 }
 
+
+/*
+.categoryButton:not(:last-child) {
+  padding-right: 15px;
+}
+
+.categoryButton:not(:last-child)::after {
+  content: "|";
+  margin-left: 15px;
+  color: #c2c2c2;
+  font-weight: normal;
+}
+*/

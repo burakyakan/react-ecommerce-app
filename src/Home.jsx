@@ -9,16 +9,31 @@ function Home() {
 
   const [category, setCategory] = useState("all");
   const [sortType, setSortType] = useState("");
+  const [inCategorySearchTerm, setInCategorySearchTerm] = useState("");
 
 
   function handleCategoryChange(newCategory) {
     setCategory(newCategory);
+    setInCategorySearchTerm("");
 
   }
 
-  const filteredProducts = category === "all" ? productsData : productsData.filter(item => item.category === category);
+  const categoryFilteredProducts = category === "all" ? productsData : productsData.filter(item => item.category === category);
 
-  //buraya search bara yazılıp enterlanan şeyleri de dahil et. Laptop diye kocaman yazan yere de 'Arama Sonuçları: "bla bla bla"' diye yaz
+  const filteredProducts = categoryFilteredProducts.filter(item => {
+    const searchTerm = inCategorySearchTerm.toLowerCase().trim().split(/\s+/);
+
+    if (searchTerm.length === 0 || searchTerm[0] === "") return true;
+
+    const productValues = [item.title, item.brand, item.color, item.ram, item.age, item.anc, item.category, item.connectionType, 
+      item.connectivity, item.genre, item.platform, item.rom, item.screenRefreshRate, item.screenResolution, item.screenSize, item.screenTechnology]
+      .map(valid => String(valid ?? '').toLowerCase());
+
+      return searchTerm.every(word => 
+      productValues.some(attribute => attribute.includes(word))
+    );
+  });
+
 
 
 
@@ -79,23 +94,21 @@ function Home() {
         </div>
 
         <div>
-          <input className={style.inCategorySearchBar} type="search" placeholder={category === "all" ? "Tüm Kategorilerde Ara" : `${category} Kategorisinde Ara`}  />
+          <input className={style.inCategorySearchBar} type="search" placeholder={category === "all" ? "Tüm Kategorilerde Ara" : `${category} Kategorisinde Ara`} value={inCategorySearchTerm} onChange={(e) => setInCategorySearchTerm(e.target.value)} />
         </div>
 
         <div>
           <select className={style.sortSelect} value={sortType} onChange={(e) => setSortType(e.target.value)}>
-            <div className={style.sortSelectOptions}>
-              <option value="">Önerilen</option>
-              <option value="priceAsc">Fiyat: Düşükten Yükseğe</option>
-              <option value="priceDesc">Fiyat: Yüksekten Düşüğe</option>
-              <option value="ratingDesc">Puan: Yüksekten Düşüğe</option>
-              <option value="ratingAsc">Puan: Düşükten Yükseğe</option>
-              <option value="alphAZ">Alfabetik: A'dan Z'ye</option>
-              <option value="alphZA">Alfabetik: Z'den A'ya</option>
-              <option value="idDesc">Eklenme Sırası: Yeniden Eskiye</option>
-              <option value="idAsc">Eklenme Sırası: Eskiden Yeniye</option>
-              <option value="random">Rastgele</option>
-            </div>
+            <option value="">Önerilen</option>
+            <option value="priceAsc">Fiyat: Düşükten Yükseğe</option>
+            <option value="priceDesc">Fiyat: Yüksekten Düşüğe</option>
+            <option value="ratingDesc">Puan: Yüksekten Düşüğe</option>
+            <option value="ratingAsc">Puan: Düşükten Yükseğe</option>
+            <option value="alphAZ">Alfabetik: A'dan Z'ye</option>
+            <option value="alphZA">Alfabetik: Z'den A'ya</option>
+            <option value="idDesc">Eklenme Sırası: Yeniden Eskiye</option>
+            <option value="idAsc">Eklenme Sırası: Eskiden Yeniye</option>
+            <option value="random">Rastgele</option>
           </select>
         </div>
 

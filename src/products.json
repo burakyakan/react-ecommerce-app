@@ -139,7 +139,7 @@
     "imgUrl": "/product_images/samsung-s26-ultra-beyaz.jpg",
     "price": 113999.00,
     "ram": 16,
-    "rom": 1024,
+    "rom": 1,
     "color": "Beyaz",
     "rating": 4.4
   },
@@ -176,7 +176,7 @@
     "price": 148499.00,
     "screenSize": 14,
     "ram": 24,
-    "rom": 1024,
+    "rom": 1,
     "color": "Uzay Siyahı",
     "rating": 4.6
   },
