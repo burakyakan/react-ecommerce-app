@@ -79,7 +79,7 @@ function Home() {
         </div>
 
         <div>
-          <input className={style.inCategorySearchBar} type="search" placeholder='Bu kategoride ara' />
+          <input className={style.inCategorySearchBar} type="search" placeholder={category === "all" ? "Tüm Kategorilerde Ara" : `${category} Kategorisinde Ara`}  />
         </div>
 
         <div>
