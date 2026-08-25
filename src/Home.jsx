@@ -10,17 +10,23 @@ function Home() {
   const [category, setCategory] = useState("all");
   const [sortType, setSortType] = useState("");
   const [inCategorySearchTerm, setInCategorySearchTerm] = useState("");
+  const [selectedBrand, setSelectedBrand] = useState("");
+  const [selectedColor, setSelectedColor] = useState("");
+  const [selectedRating, setSelectedRating] = useState("");
 
 
   function handleCategoryChange(newCategory) {
     setCategory(newCategory);
     setInCategorySearchTerm("");
-
+    setSelectedBrand("");
+    setSelectedColor("");
+    setSelectedRating("");
+    setSortType("");
   }
 
   const categoryFilteredProducts = category === "all" ? productsData : productsData.filter(item => item.category === category);
 
-  const filteredProducts = categoryFilteredProducts.filter(item => {
+  const searchFilteredProducts = categoryFilteredProducts.filter(item => {
     const searchTerm = inCategorySearchTerm.toLowerCase().trim().split(/\s+/);
 
     if (searchTerm.length === 0 || searchTerm[0] === "") return true;
@@ -34,6 +40,18 @@ function Home() {
     );
   });
 
+  const filteredProducts = searchFilteredProducts.filter(item => {
+    const matchesBrand = !selectedBrand || item.brand === selectedBrand;
+    const matchesColor = !selectedColor || item.color === selectedColor;
+    const matchesRating = !selectedRating ||
+      (selectedRating === "5" && item.rating === 5) ||
+      (selectedRating === "4.5plus" && item.rating >= 4.5) ||
+      (selectedRating === "4plus" && item.rating >= 4) ||
+      (selectedRating === "3.5plus" && item.rating >= 3.5) ||
+      (selectedRating === "3plus" && item.rating >= 3);
+
+    return matchesBrand && matchesColor && matchesRating;
+  });
 
 
 
@@ -59,7 +77,7 @@ function Home() {
 
   return (
 
-    <div >
+    <div>
       <div className={style.filterRow}>
         <Filter onCategoryChange={handleCategoryChange}></Filter>
       </div>
@@ -70,15 +88,15 @@ function Home() {
 
       <div className={style.productBar}>
         <div>
-          <select className={style.brandSelect} value={null} onChange={null}>
+          <select className={style.brandSelect} value={selectedBrand} onChange={(e) => setSelectedBrand(e.target.value)}>
             <option value="">Marka</option>
-            <option value="Beyaz">Apple</option>
-            <option value="Siyah">Samsung</option>
+            <option value="Apple">Apple</option>
+            <option value="Samsung">Samsung</option>
           </select>
         </div>
 
         <div>
-          <select className={style.colorSelect} value={null} onChange={null}>
+          <select className={style.colorSelect} value={selectedColor} onChange={(e) => setSelectedColor(e.target.value)}>
             <option value="">Renk</option>
             <option value="Beyaz">Beyaz</option>
             <option value="Siyah">Siyah</option>
@@ -86,9 +104,12 @@ function Home() {
         </div>
 
         <div>
-          <select className={style.ratingSelect} value={null} onChange={null}>
+          <select className={style.ratingSelect} value={selectedRating} onChange={(e) => setSelectedRating(e.target.value)}>
             <option value="">Puan</option>
+            <option value="5">5 ★</option>
+            <option value="4.5plus">4.5 ★ ve Üzeri</option>
             <option value="4plus">4 ★ ve Üzeri</option>
+            <option value="3.5plus">3.5 ★ ve Üzeri</option>
             <option value="3plus">3 ★ ve Üzeri</option>
           </select>
         </div>
