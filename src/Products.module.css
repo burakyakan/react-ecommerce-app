@@ -21,12 +21,6 @@ img {
     padding-top: 30px;  
 }
 
-@media (max-width: 500px) {
-  .container {
-    background-color: red;
-  }
-  
-}
 
 .title {
     color: rgb(45, 45, 45);
