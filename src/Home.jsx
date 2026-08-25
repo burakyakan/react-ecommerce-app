@@ -50,7 +50,8 @@ function Home() {
       (selectedRating === "4.5plus" && item.rating >= 4.5) ||
       (selectedRating === "4plus" && item.rating >= 4) ||
       (selectedRating === "3.5plus" && item.rating >= 3.5) ||
-      (selectedRating === "3plus" && item.rating >= 3);
+      (selectedRating === "3plus" && item.rating >= 3) ||
+      (selectedRating === "3minus" && item.rating < 3);
 
     return matchesBrand && matchesColor && matchesRating;
   });
@@ -115,6 +116,7 @@ function Home() {
             <option value="4plus">4 ★ ve Üzeri</option>
             <option value="3.5plus">3.5 ★ ve Üzeri</option>
             <option value="3plus">3 ★ ve Üzeri</option>
+            <option value="3minus">3 ★ Altı</option>
           </select>
         </div>
 

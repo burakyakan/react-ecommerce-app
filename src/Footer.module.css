@@ -26,9 +26,24 @@ a {
   text-align: center;
   justify-content: center;
   height: 40px;
-  background-color: #081836;
+  background-color: #303030;
   margin-top: auto;
   border-top: 1px solid #c2c2c2;
   color: rgba(255, 255, 255, 0.904);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+.copyrightFooter a {
+  color: #d5b16d ;
+
+  &:hover {
+    color: #876f40;
+  }
   
 }

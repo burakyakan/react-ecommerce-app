@@ -16,8 +16,8 @@ function Header() {
       <div className={style.menuWrapper}>
         <nav>
           <ul>
-            <a href="#">Sepet</a>
-            <a href="#">Hesabım</a>
+            <span className={style.cartBox}><a href="#">Sepet</a></span>
+            <span className={style.accountBox}><a href="#">Hesabım</a></span>
           </ul>
         </nav>
       </div>

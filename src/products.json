@@ -213,7 +213,7 @@
     "price": 37499.00,
     "ram": 16,
     "rom": 825,
-    "color": "Siyah",
+    "color": "Beyaz",
     "rating": 4.9
   },
   {
@@ -577,7 +577,73 @@
     "connectionType": "Bluetooth",
     "color": "Mor",
     "rating": 4.1
+  },
+  {
+    "id": 50,
+    "category": "Laptop",
+    "brand": "Asus",
+    "title": "ROG Zephyrus G16 GU605CW",
+    "imgUrl": "/product_images/asus-rog-zephyrus-g16-platin-beyaz.jpg",
+    "price": 389500.00,
+    "screenSize": 16,
+    "ram": 32,
+    "rom": 2,
+    "color": "Platin Beyaz",
+    "rating": 4.4
+  },
+  {
+    "id": 51,
+    "category": "Laptop",
+    "brand": "Apple",
+    "title": "MacBook Air M5",
+    "imgUrl": "/product_images/apple-macbook-air-m5-13-gümüş.jpg",
+    "price": 69999.00,
+    "screenSize": 13,
+    "ram": 16,
+    "rom": 512,
+    "color": "Gümüş",
+    "rating": 4.8
+  },
+  {
+    "id": 52,
+    "category": "Laptop",
+    "brand": "Apple",
+    "title": "MacBook Air M5",
+    "imgUrl": "/product_images/apple-macbook-air-m5-13-gece-yarısı.jpg",
+    "price": 69999.00,
+    "screenSize": 13,
+    "ram": 16,
+    "rom": 512,
+    "color": "Gece Yarısı",
+    "rating": 4.8
+  },
+  {
+    "id": 53,
+    "category": "Laptop",
+    "brand": "Apple",
+    "title": "MacBook Air M5",
+    "imgUrl": "/product_images/apple-macbook-air-m5-13-gök-mavisi.jpg",
+    "price": 69999.00,
+    "screenSize": 13,
+    "ram": 16,
+    "rom": 512,
+    "color": "Gök Mavisi",
+    "rating": 4.8
+  },
+  {
+    "id": 54,
+    "category": "Laptop",
+    "brand": "Apple",
+    "title": "MacBook Air M5",
+    "imgUrl": "/product_images/apple-macbook-air-m5-13-yıldız-ışığı.jpg",
+    "price": 69999.00,
+    "screenSize": 13,
+    "ram": 16,
+    "rom": 512,
+    "color": "Yıldız Işığı",
+    "rating": 4.8
   }
+  
 
 
 ]

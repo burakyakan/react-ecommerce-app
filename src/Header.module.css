@@ -73,3 +73,27 @@ input[type="search"]::-webkit-search-cancel-button {
   cursor: pointer;
   padding-left: 0px;
 }
+
+.cartBox {
+  background-color: #65522d;
+  border-radius: 14px;
+  padding: 6px 10px 8px 10px;
+  font-weight: bold;
+
+  & a {
+    color: #ececed;
+    
+  }
+}
+
+.accountBox {
+  background-color: #65522d;
+  border-radius: 14px;
+  padding: 6px 10px 8px 10px;
+  font-weight: bold;
+
+  & a {
+    color: #ececed;
+    
+  }
+}

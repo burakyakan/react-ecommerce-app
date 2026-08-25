@@ -40,7 +40,7 @@ function Product(props) {
     })
     return formattedPrice + " TL";
   }
-/* TODO: Eğer kategori saatse mm yazdır, yoksa inç. İki farklı değişkene gerek yok, birleştir */
+  /* TODO: Eğer kategori saatse mm yazdır, yoksa inç. İki farklı değişkene gerek yok, birleştir */
 
   return (
     <div className={style.container}>
@@ -68,8 +68,11 @@ function Product(props) {
       </div>
 
       <p className={style.price}>{formatPrice()}</p>
-      <button className={style.addToBasketButton} onClick={addToBasket}>Add to Basket</button>
-      <button className={style.addToFavoritesButton} onClick={addToFavorites}>Add to Favorites</button>
+      <div className={style.buttonBox}>
+        <button className={style.addToBasketButton} onClick={addToBasket}>Sepete Ekle</button>
+        <button className={style.addToFavoritesButton} onClick={addToFavorites}></button>
+      </div>
+
     </div>
   );
 
