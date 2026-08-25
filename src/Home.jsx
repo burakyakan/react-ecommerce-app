@@ -22,6 +22,8 @@ function Home() {
 
 
 
+
+
   const sortedProducts = useMemo(() => {
     return [...filteredProducts].sort((a, b) => {
       if (sortType === "priceAsc") return a.price - b.price;
@@ -51,22 +53,52 @@ function Home() {
       <h2 className={style.categoryTitle}>{category === "all" ? "Tüm Ürünler" : `${category}`}</h2>
       <h3 className={style.productCount}>{filteredProducts.length} Ürün Bulundu</h3>
 
-      <div>
-        <select className={style.sortSelect} value={sortType} onChange={(e) => setSortType(e.target.value)}>
-          <div className={style.sortSelectOptions}>
-            <option value="">Önerilen</option>
-            <option value="priceAsc">Fiyat: Düşükten Yükseğe</option>
-            <option value="priceDesc">Fiyat: Yüksekten Düşüğe</option>
-            <option value="ratingDesc">Puan: Yüksekten Düşüğe</option>
-            <option value="ratingAsc">Puan: Düşükten Yükseğe</option>
-            <option value="alphAZ">Alfabetik: A'dan Z'ye</option>
-            <option value="alphZA">Alfabetik: Z'den A'ya</option>
-            <option value="idDesc">Eklenme Sırası: Yeniden Eskiye</option>
-            <option value="idAsc">Eklenme Sırası: Eskiden Yeniye</option>
-            <option value="random">Rastgele</option>
-          </div>
+      <div className={style.productBar}>
+        <div>
+          <select className={style.brandSelect} value={null} onChange={null}>
+            <option value="">Marka</option>
+            <option value="Beyaz">Apple</option>
+            <option value="Siyah">Samsung</option>
+          </select>
+        </div>
 
-        </select>
+        <div>
+          <select className={style.colorSelect} value={null} onChange={null}>
+            <option value="">Renk</option>
+            <option value="Beyaz">Beyaz</option>
+            <option value="Siyah">Siyah</option>
+          </select>
+        </div>
+
+        <div>
+          <select className={style.ratingSelect} value={null} onChange={null}>
+            <option value="">Puan</option>
+            <option value="4plus">4 ★ ve Üzeri</option>
+            <option value="3plus">3 ★ ve Üzeri</option>
+          </select>
+        </div>
+
+        <div>
+          <input className={style.inCategorySearchBar} type="search" placeholder='Bu kategoride ara' />
+        </div>
+
+        <div>
+          <select className={style.sortSelect} value={sortType} onChange={(e) => setSortType(e.target.value)}>
+            <div className={style.sortSelectOptions}>
+              <option value="">Önerilen</option>
+              <option value="priceAsc">Fiyat: Düşükten Yükseğe</option>
+              <option value="priceDesc">Fiyat: Yüksekten Düşüğe</option>
+              <option value="ratingDesc">Puan: Yüksekten Düşüğe</option>
+              <option value="ratingAsc">Puan: Düşükten Yükseğe</option>
+              <option value="alphAZ">Alfabetik: A'dan Z'ye</option>
+              <option value="alphZA">Alfabetik: Z'den A'ya</option>
+              <option value="idDesc">Eklenme Sırası: Yeniden Eskiye</option>
+              <option value="idAsc">Eklenme Sırası: Eskiden Yeniye</option>
+              <option value="random">Rastgele</option>
+            </div>
+          </select>
+        </div>
+
       </div>
 
       <div className={style.home}>

@@ -15,7 +15,6 @@ function Filter({ onCategoryChange }) {
       <button className={style.categoryButton} onClick={() => onCategoryChange("Akıllı Saat")}>Akıllı Saat</button>
       <button className={style.categoryButton} onClick={() => onCategoryChange("Kulaklık")}>Kulaklık</button>
       <button className={style.categoryButton} onClick={() => onCategoryChange("Ses")}>Ses</button>
-      <button className={style.categoryButton} onClick={() => onCategoryChange("Oyuncu")}>Oyuncu</button>
       <button className={style.categoryButton} onClick={() => onCategoryChange("Oyun Konsolu")}>Oyun Konsolu</button>
       <button className={style.categoryButton} onClick={() => onCategoryChange("Oyun")}>Oyun</button>
       <button className={style.categoryButton} onClick={() => onCategoryChange("Aksesuar")}>Aksesuar</button>

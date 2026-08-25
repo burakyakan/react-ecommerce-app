@@ -17,6 +17,7 @@
 
 .productCount {
   margin-top: 10px;
+  margin-bottom: 1.875rem;
   font-weight: 400;
 }
 
@@ -56,9 +57,9 @@
 
 .sortSelect {
   border: 1px solid #c2c2c2;
-  padding: 8px 60px;
+  padding: 8px 50px 8px 60px;
   border-radius: 30px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: normal;
   appearance: none;
   -webkit-appearance: none;
@@ -66,11 +67,16 @@
   text-align: center;
   text-align-last: center;
   cursor: pointer;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5MTc0M2YiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1hcnJvdy1kb3duLXVwLWljb24gbHVjaWRlLWFycm93LWRvd24tdXAiPjxwYXRoIGQ9Im0zIDE2IDQgNCA0LTQiLz48cGF0aCBkPSJNNyAyMFY0Ii8+PHBhdGggZD0ibTIxIDgtNC00LTQgNCIvPjxwYXRoIGQ9Ik0xNyA0djE2Ii8+PC9zdmc+");
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5MTc0M2YiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1hcnJvdy1kb3duLXVwLWljb24gbHVjaWRlLWFycm93LWRvd24tdXAiPjxwYXRoIGQ9Im0zIDE2IDQgNCA0LTQiLz48cGF0aCBkPSJNNyAyMFY0Ii8+PHBhdGggZD0ibTIxIDgtNC00LTQgNCIvPjxwYXRoIGQ9Ik0xNyA0djE2Ii8+PC9zdmc+"),
+    url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNjMmMyYzIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jaGV2cm9uLWRvd24taWNvbiBsdWNpZGUtY2hldnJvbi1kb3duIj48cGF0aCBkPSJtNiA5IDYgNiA2LTYiLz48L3N2Zz4=");
   background-repeat: no-repeat;
-  background-position: right 20px center; 
+  background-position: left 20px center, right 20px center; 
   background-size: 24px 24px;
-  color: #2d2d2d
+  color: #2d2d2d;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin: 0px 20px 0px 20px;
 }
 
 
@@ -78,4 +84,117 @@
 .sortSelect:focus {
   border: 1px solid #91743f;
   outline: none;
+}
+
+.inCategorySearchBar {
+  border: 1px solid #c2c2c2;
+  padding: 8px 50px 8px 60px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: normal;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3NTc1NzUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zZWFyY2gtaWNvbiBsdWNpZGUtc2VhcmNoIj48cGF0aCBkPSJtMjEgMjEtNC4zNC00LjM0Ii8+PGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iOCIvPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-position: left 20px center; 
+  background-size: 24px 24px;
+  color: #2d2d2d;
+  flex: 1;
+  margin: 0px 20px 0px 20px;
+  height: 44.5px;
+}
+
+.inCategorySearchBar:focus {
+  border: 1px solid #91743f;
+  outline: none;
+}
+
+.brandSelect {
+  border: 1px solid #c2c2c2;
+  padding: 8px 50px 8px 60px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: normal;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-align: center;
+  text-align-last: center;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5MTc0M2YiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zcGFya2xlcy1pY29uIGx1Y2lkZS1zcGFya2xlcyI+PHBhdGggZD0iTTExLjAxNyAyLjgxNGExIDEgMCAwIDEgMS45NjYgMGwxLjA1MSA1LjU1OGEyIDIgMCAwIDAgMS41OTQgMS41OTRsNS41NTggMS4wNTFhMSAxIDAgMCAxIDAgMS45NjZsLTUuNTU4IDEuMDUxYTIgMiAwIDAgMC0xLjU5NCAxLjU5NGwtMS4wNTEgNS41NThhMSAxIDAgMCAxLTEuOTY2IDBsLTEuMDUxLTUuNTU4YTIgMiAwIDAgMC0xLjU5NC0xLjU5NGwtNS41NTgtMS4wNTFhMSAxIDAgMCAxIDAtMS45NjZsNS41NTgtMS4wNTFhMiAyIDAgMCAwIDEuNTk0LTEuNTk0eiIvPjxwYXRoIGQ9Ik0yMCAydjQiLz48cGF0aCBkPSJNMjIgNGgtNCIvPjxjaXJjbGUgY3g9IjQiIGN5PSIyMCIgcj0iMiIvPjwvc3ZnPg=="),
+    url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNjMmMyYzIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jaGV2cm9uLWRvd24taWNvbiBsdWNpZGUtY2hldnJvbi1kb3duIj48cGF0aCBkPSJtNiA5IDYgNiA2LTYiLz48L3N2Zz4=");
+  background-repeat: no-repeat;
+  background-position: left 20px center, right 20px center; 
+  background-size: 24px 24px;
+  color: #2d2d2d;
+}
+
+.brandSelect:focus {
+  border: 1px solid #91743f;
+  outline: none;
+}
+
+.colorSelect {
+  border: 1px solid #c2c2c2;
+  padding: 8px 50px 8px 60px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: normal;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-align: center;
+  text-align-last: center;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5MTc0M2YiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1wYWxldHRlLWljb24gbHVjaWRlLXBhbGV0dGUiPjxwYXRoIGQ9Ik0xMiAyMmExIDEgMCAwIDEgMC0yMCAxMCA5IDAgMCAxIDEwIDkgNSA1IDAgMCAxLTUgNWgtMi4yNWExLjc1IDEuNzUgMCAwIDAtMS40IDIuOGwuMy40YTEuNzUgMS43NSAwIDAgMS0xLjQgMi44eiIvPjxjaXJjbGUgY3g9IjEzLjUiIGN5PSI2LjUiIHI9Ii41IiBmaWxsPSJjdXJyZW50Q29sb3IiLz48Y2lyY2xlIGN4PSIxNy41IiBjeT0iMTAuNSIgcj0iLjUiIGZpbGw9ImN1cnJlbnRDb2xvciIvPjxjaXJjbGUgY3g9IjYuNSIgY3k9IjEyLjUiIHI9Ii41IiBmaWxsPSJjdXJyZW50Q29sb3IiLz48Y2lyY2xlIGN4PSI4LjUiIGN5PSI3LjUiIHI9Ii41IiBmaWxsPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4="),
+    url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNjMmMyYzIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jaGV2cm9uLWRvd24taWNvbiBsdWNpZGUtY2hldnJvbi1kb3duIj48cGF0aCBkPSJtNiA5IDYgNiA2LTYiLz48L3N2Zz4=");
+  background-repeat: no-repeat;
+  background-position: left 20px center, right 20px center; 
+  background-size: 24px 24px;
+  color: #2d2d2d;  
+}
+.colorSelect:focus {
+  border: 1px solid #91743f;
+  outline: none;
+}
+
+.ratingSelect {
+  border: 1px solid #c2c2c2;
+  padding: 8px 50px 8px 60px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: normal;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-align: center;
+  text-align-last: center;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5MTc0M2YiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS11c2VyLXN0YXItaWNvbiBsdWNpZGUtdXNlci1zdGFyIj48cGF0aCBkPSJNMTYuMDUxIDEyLjYxNmExIDEgMCAwIDEgMS45MDkuMDI0bC43MzcgMS40NTJhMSAxIDAgMCAwIC43MzcuNTM1bDEuNjM0LjI1NmExIDEgMCAwIDEgLjU4OCAxLjgwNmwtMS4xNzIgMS4xNjhhMSAxIDAgMCAwLS4yODIuODY2bC4yNTkgMS42MTNhMSAxIDAgMCAxLTEuNTQxIDEuMTM0bC0xLjQ2NS0uNzVhMSAxIDAgMCAwLS45MTIgMGwtMS40NjUuNzVhMSAxIDAgMCAxLTEuNTM5LTEuMTMzbC4yNTgtMS42MTNhMSAxIDAgMCAwLS4yODItLjg2NmwtMS4xNTYtMS4xNTNhMSAxIDAgMCAxIC41NzItMS44MjJsMS42MzMtLjI1NmExIDEgMCAwIDAgLjczNy0uNTM1eiIvPjxwYXRoIGQ9Ik04IDE1SDdhNCA0IDAgMCAwLTQgNHYyIi8+PGNpcmNsZSBjeD0iMTAiIGN5PSI3IiByPSI0Ii8+PC9zdmc+"),
+    url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNjMmMyYzIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jaGV2cm9uLWRvd24taWNvbiBsdWNpZGUtY2hldnJvbi1kb3duIj48cGF0aCBkPSJtNiA5IDYgNiA2LTYiLz48L3N2Zz4=");
+  background-repeat: no-repeat;
+  background-position: left 20px center, right 20px center; 
+  background-size: 24px 24px;
+  color: #2d2d2d;  
+}
+.ratingSelect:focus {
+  border: 1px solid #91743f;
+  outline: none;
+}
+
+.productBar {
+  display: grid;
+  grid-template-columns: 0.7fr 0.7fr 0.8fr 1.4fr 1.2fr;
+  gap: 16px;
+  padding: 0 20px;
+}
+
+.productBar > div {
+  min-width: 0;
+}
+
+.productBar select,
+.productBar input {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  height: 48px;
 }

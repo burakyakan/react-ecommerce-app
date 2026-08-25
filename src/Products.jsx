@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import style from './Product.module.css'
+import style from './Products.module.css'
 import { Route } from "react-router-dom";
 
 function Product(props) {

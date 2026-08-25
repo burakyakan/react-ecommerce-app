@@ -24,7 +24,7 @@
   border: none;
   font-size: 22px;
   color: #353935;
-  color: #C5A059;
+  color: #b89554;
   background: none;
   font-weight: bold;
   cursor: pointer;
@@ -33,5 +33,10 @@
 
 .categoryButton:hover {
   color: #91743f;
+}
+
+.categoryButton:not(:last-child) {
+  border-right: 1px solid #c2c2c2;
+  padding-right: 15px;
 }
 
