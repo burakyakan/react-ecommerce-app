@@ -50,10 +50,12 @@
 
 .title {
     color: rgb(45, 45, 45);
+    font-size: 5rem;
 }
 
 .ratingStars {
     color: rgb(245, 218, 97);
+    
 }
 
 .addToBasketButton {
