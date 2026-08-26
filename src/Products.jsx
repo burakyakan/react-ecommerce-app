@@ -48,6 +48,8 @@ function Product(props) {
       <p className={style.brand}>{props.brand}</p>
       <p className={style.title}>{props.title}</p>
       <div className={style.specs}>
+        {props.layout && <span>{props.layout}</span>}
+        {props.accessories && <span>{props.accessories}</span>}
         {props.screenSize && <span>{props.screenSize} {props.category === "Akıllı Saat" ? " mm" : "\""}</span>}
         {props.ram && <span>{props.ram} GB</span>}
         {props.rom && <span>{props.rom} {props.rom >= 1 && props.rom <= 4 ? "TB" : "GB"}</span>}

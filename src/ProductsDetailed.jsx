@@ -43,6 +43,7 @@ function Product(props) {
 
   return (
     <div className={style.container}>
+      <h1>BURASI DETAILED SAYFASI</h1>
       <img src={props.imgUrl} alt={props.title} />
       <p className={style.brand}>{props.brand}</p>
       <p className={style.title}>{props.title}</p>
