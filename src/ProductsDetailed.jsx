@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import style from './ProductsDetailed.module.css'
 import productsData from './products.json'
+import { Link } from "react-router-dom";
 
 function Product() {
 
@@ -41,7 +42,7 @@ function Product() {
   }
 
   function formatPrice() {
-    const formattedPrice = props.price.toLocaleString('tr-TR', {
+    const formattedPrice = product.price.toLocaleString('tr-TR', {
       style: 'decimal',
       minimumFractionDigits: 2,
       maximumFractionDigits: 2
@@ -52,31 +53,47 @@ function Product() {
 
   return (
     <div className={style.container}>
-      <h1>BURASI DETAILED SAYFASI</h1>
       <div className={style.backToHomepage}>
-        <p>Ana Sayfaya Dön</p>
+        <Link to={`/`}>
+          <p>Ana Sayfaya Dön</p>
+        </Link>
       </div>
       <div className={style.imgBox}>
         <img src={product.imgUrl} alt={product.title} />
       </div>
-      
-      <p className={style.brand}>{product.brand}</p>
-      <p className={style.title}>{product.title}</p>
-      <div>
-        <span>{product.ram} GB • {product.rom} GB • {product.color}</span>
-      </div>
-      <div>
-        <span className={style.ratingStars}>{product.rating}</span>
-        <span> {product.rating}</span>
-      </div>
+  
 
-      <p className={style.price}>{product.price.toLocaleString('tr-TR', {
-        style: 'decimal',
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      })} TL</p>
-      <button className={style.addToBasketButton} onClick={addToBasket}>Add to Basket</button>
-      <button className={style.addToFavoritesButton} onClick={addToFavorites}>Add to Favorites</button>
+
+
+      <p className={style.brand}>{product.brand}</p>
+            <p className={style.title}>{product.title}</p>
+            <div className={style.specs}>
+              {product.layout && <span>{product.layout}</span>}
+              {product.accessories && <span>{product.accessories}</span>}
+              {product.screenSize && <span>{product.screenSize} {product.category === "Akıllı Saat" ? " mm" : "\""}</span>}
+              {product.ram && <span>{product.ram} GB</span>}
+              {product.rom && <span>{product.rom} {product.rom >= 1 && product.rom <= 4 ? "TB" : "GB"}</span>}
+              {product.connectivity && <span>{product.connectivity}</span>}
+              {product.platform && <span>{product.platform}</span>}
+              {product.age && <span>{product.category === "Oyun" ? "PEGI " : "+"} {product.age}</span>}
+              {product.genre && <span>{product.genre}</span>}
+              {product.screenResolution && <span>{product.screenResolution}</span>}
+              {product.screenRefreshRate && <span>{product.screenRefreshRate} Hz</span>}
+              {product.anc && <span>{product.anc ? "ANC" : null}</span>}
+              {product.connectionType && <span>{product.connectionType}</span>}
+              {product.screenTechnology && <span>{product.screenTechnology}</span>}
+              {product.color && <span>{product.color}</span>}
+            </div>
+            <div>
+              <span className={style.ratingStars}>{addRatingStars()}</span>
+              <span> {product.rating}</span>
+            </div>
+      
+            <p className={style.price}>{formatPrice()}</p>
+            <div className={style.buttonBox}>
+              <button className={style.addToBasketButton} onClick={addToBasket}>Sepete Ekle</button>
+              <button className={style.addToFavoritesButton} onClick={addToFavorites}></button>
+            </div>
     </div>
   );
 

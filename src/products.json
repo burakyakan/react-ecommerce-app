@@ -828,7 +828,89 @@
     "connectionType": "Bluetooth",
     "color": "Beyaz",
     "rating": 4.4
+  },
+  {
+    "id": 70,
+    "category": "Kulaklık",
+    "brand": "Sony",
+    "title": "WH-1000XM5",
+    "imgUrl": "/product_images/sony-xm5-siyah.jpg",
+    "price": 14999.00,
+    "anc": true,
+    "connectionType": "Bluetooth",
+    "color": "Siyah",
+    "rating": 4.2
+  },
+  {
+    "id": 71,
+    "category": "Kulaklık",
+    "brand": "Sony",
+    "title": "WH-1000XM5",
+    "imgUrl": "/product_images/sony-xm5-gece-mavisi.jpg",
+    "price": 14999.00,
+    "anc": true,
+    "connectionType": "Bluetooth",
+    "color": "Gece Mavisi",
+    "rating": 4.2
+  },
+  {
+    "id": 72,
+    "category": "Kulaklık",
+    "brand": "Sony",
+    "title": "WH-1000XM5",
+    "imgUrl": "/product_images/sony-xm5-platin-gümüş.jpg",
+    "price": 14999.00,
+    "anc": true,
+    "connectionType": "Bluetooth",
+    "color": "Beyaz",
+    "rating": 4.2
+  },
+  {
+    "id": 73,
+    "category": "Kulaklık",
+    "brand": "Sony",
+    "title": "WH-1000XM6",
+    "imgUrl": "/product_images/sony-xm6-siyah.jpg",
+    "price": 19999.00,
+    "anc": true,
+    "connectionType": "Bluetooth",
+    "color": "Siyah",
+    "rating": 4.3
+  },
+  {
+    "id": 74,
+    "category": "Kulaklık",
+    "brand": "Sony",
+    "title": "WH-1000XM6",
+    "imgUrl": "/product_images/sony-xm6-gece-mavisi.jpg",
+    "price": 19999.00,
+    "anc": true,
+    "connectionType": "Bluetooth",
+    "color": "Gece Mavisi",
+    "rating": 4.3
+  },
+  {
+    "id": 75,
+    "category": "Kulaklık",
+    "brand": "Sony",
+    "title": "WH-1000XM6",
+    "imgUrl": "/product_images/sony-xm6-kum-pembesi.jpg",
+    "price": 19999.00,
+    "anc": true,
+    "connectionType": "Bluetooth",
+    "color": "Kum Pembesi",
+    "rating": 4.3
+  },
+  {
+    "id": 76,
+    "category": "Kulaklık",
+    "brand": "Sony",
+    "title": "WH-1000XM6",
+    "imgUrl": "/product_images/sony-xm6-platin-gümüş.jpg",
+    "price": 19999.00,
+    "anc": true,
+    "connectionType": "Bluetooth",
+    "color": "Platin Gümüş",
+    "rating": 4.3
   }
-  
-
 ]
