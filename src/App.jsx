@@ -4,6 +4,7 @@ import Header from './Header.jsx'
 import Home from './Home.jsx'
 import Footer from './Footer.jsx'
 import AnnouncementBar from './AnnouncementBar';
+import ProductsDetailed from './ProductsDetailed.jsx'
 import { Routes, Route, Link } from 'react-router-dom'
 
 function App() {
@@ -12,7 +13,11 @@ function App() {
     <div>
       <AnnouncementBar></AnnouncementBar>
       <Header></Header>
-      <Home></Home>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path="/urun/:category/:brand/:title/:id" element={<ProductsDetailed/>} />
+        
+      </Routes>
       <Footer></Footer>
     </div>
     

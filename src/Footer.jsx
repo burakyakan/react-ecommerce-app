@@ -45,6 +45,7 @@ function Footer() {
         <p>&copy; {date} Burak Yakan – Tüm hakları saklıdır.</p>
         <p>Powered by:<a href="https://yakan.dev" target="_blank" rel="noopener noreferrer">yakan.dev</a></p>
       </div>
+      
     </footer>
   );
 }

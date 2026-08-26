@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import style from './Products.module.css'
-import { Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Product(props) {
 
@@ -40,11 +40,13 @@ function Product(props) {
     })
     return formattedPrice + " TL";
   }
-  /* TODO: Eğer kategori saatse mm yazdır, yoksa inç. İki farklı değişkene gerek yok, birleştir */
 
   return (
     <div className={style.container}>
-      <img src={props.imgUrl} alt={props.title} />
+      <Link to={`/urun/${props.category.toLowerCase().trim().replace(/İ/g, 'I').replace(/ı/g, 'i').replace(/Ğ/g, 'G').replace(/ğ/g, 'g').replace(/Ü/g, 'U').replace(/ü/g, 'u').replace(/Ş/g, 'S').replace(/ş/g, 's').replace(/Ö/g, 'O').replace(/ö/g, 'o').replace(/Ç/g, 'C').replace(/ç/g, 'c').replace(/\s+/g, "-")}/${props.brand.toLowerCase().trim().replace(/İ/g, 'I').replace(/ı/g, 'i').replace(/Ğ/g, 'G').replace(/ğ/g, 'g').replace(/Ü/g, 'U').replace(/ü/g, 'u').replace(/Ş/g, 'S').replace(/ş/g, 's').replace(/Ö/g, 'O').replace(/ö/g, 'o').replace(/Ç/g, 'C').replace(/ç/g, 'c').replace(/\s+/g, "-")}/${props.title.toLowerCase().trim().replace(/İ/g, 'I').replace(/ı/g, 'i').replace(/Ğ/g, 'G').replace(/ğ/g, 'g').replace(/Ü/g, 'U').replace(/ü/g, 'u').replace(/Ş/g, 'S').replace(/ş/g, 's').replace(/Ö/g, 'O').replace(/ö/g, 'o').replace(/Ç/g, 'C').replace(/ç/g, 'c').replace(/\s+/g, "-")}/${props.id}`}>
+        <img src={props.imgUrl} alt={props.title} />
+      </Link>
+
       <p className={style.brand}>{props.brand}</p>
       <p className={style.title}>{props.title}</p>
       <div className={style.specs}>

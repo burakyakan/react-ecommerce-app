@@ -153,7 +153,7 @@ function Home() {
           sortedProducts.map(({ id, category, brand, title, imgUrl, price, ram, rom, color, rating, screenSize, screenResolution, screenRefreshRate, anc,
             connectionType, watchSize, connectivity, screenTechnology, platform, age, genre, layout, accessories }) => (
 
-            <Product key={id} category={category} brand={brand} title={title} imgUrl={imgUrl} price={price}
+            <Product key={id} id={id} category={category} brand={brand} title={title} imgUrl={imgUrl} price={price}
               ram={ram} rom={rom} color={color} rating={rating} screenSize={screenSize} screenResolution={screenResolution}
               screenRefreshRate={screenRefreshRate} anc={anc} connectionType={connectionType} watchSize={watchSize}
               connectivity={connectivity} screenTechnology={screenTechnology} platform={platform} age={age} genre={genre} layout={layout} accessories={accessories}></Product>

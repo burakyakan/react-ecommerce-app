@@ -1,4 +1,5 @@
 import style from './Header.module.css'
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -6,7 +7,10 @@ function Header() {
   return (
     <header>
       <div className={style.logoWrapper}>
-        <h1><a href="#" className={style.logoText}>birazıburada</a></h1>
+        <Link to={`/`}>
+          <h1><a href="#" className={style.logoText}>birazıburada</a></h1>
+        </Link>
+
       </div>
 
       <div className={style.searchBarWrapper}>
