@@ -8,6 +8,8 @@ import Filter from './Filter';
 //TODO: Product Detailed Sayfasını yap artık.
 //TODO: Sepete Ekleme ve Likelama fonksiyonu.
 //TODO: Genel search bar çalışmalı.
+//TODO: Sepet ve hesabım düğmeleri çalıştır.
+//TODO: 
 
 
 function Home() {

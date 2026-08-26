@@ -363,7 +363,7 @@
     "category": "Aksesuar",
     "brand": "Logitech",
     "title": "MX Master 4",
-    "imgUrl": "/product_images/logitech-mx-master-4.jpg",
+    "imgUrl": "/product_images/logitech-mx-master-4-grafit.jpg",
     "price": 6499.00,
     "connectionType": "Bluetooth & USB-C",
     "color": "Grafit",
@@ -642,7 +642,74 @@
     "rom": 512,
     "color": "Yıldız Işığı",
     "rating": 4.8
+  },
+  {
+    "id": 55,
+    "category": "Aksesuar",
+    "brand": "Logitech",
+    "title": "MX Master 4",
+    "imgUrl": "/product_images/logitech-mx-master-4-açık-gri.jpg",
+    "price": 6499.00,
+    "connectionType": "Bluetooth & USB-C",
+    "color": "Açık Gri",
+    "rating": 4.4
+  },
+  {
+    "id": 56,
+    "category": "Aksesuar",
+    "brand": "Logitech",
+    "title": "MX Master 3S",
+    "imgUrl": "/product_images/logitech-mx-master-3s-grafit.jpg",
+    "price": 4999.00,
+    "connectionType": "Bluetooth & USB-C",
+    "color": "Grafit",
+    "rating": 4.5
+  },
+  {
+    "id": 57,
+    "category": "Aksesuar",
+    "brand": "Logitech",
+    "title": "MX Master 3S",
+    "imgUrl": "/product_images/logitech-mx-master-3s-siyah.jpg",
+    "price": 4999.00,
+    "connectionType": "Bluetooth & USB-C",
+    "color": "Siyah",
+    "rating": 4.5
+  },
+  {
+    "id": 58,
+    "category": "Aksesuar",
+    "brand": "Logitech",
+    "title": "MX Vertical",
+    "imgUrl": "/product_images/logitech-mx-vertical-grafit.jpg",
+    "price": 4999.00,
+    "connectionType": "Bluetooth & USB-C",
+    "color": "Grafit",
+    "rating": 4.5
+  },
+  {
+    "id": 59,
+    "category": "Aksesuar",
+    "brand": "Logitech",
+    "title": "MX Keys S (Türkçe Q)",
+    "imgUrl": "/product_images/logitech-mx-keys-s-siyah.jpg",
+    "price": 5899.00,
+    "connectionType": "Bluetooth & USB-C",
+    "color": "Siyah",
+    "rating": 4.7
+  },
+  {
+    "id": 60,
+    "category": "Aksesuar",
+    "brand": "Logitech",
+    "title": "MX Keys Mini (İngilizce QWERTY)",
+    "imgUrl": "/product_images/logitech-mx-keys-mini-grafit.jpg",
+    "price": 4899.00,
+    "connectionType": "Bluetooth & USB-C",
+    "color": "Grafit",
+    "rating": 4.8
   }
+
   
 
 

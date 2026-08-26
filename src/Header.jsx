@@ -16,8 +16,9 @@ function Header() {
       <div className={style.menuWrapper}>
         <nav>
           <ul>
-            <span className={style.cartBox}><a href="#">Sepet</a></span>
-            <span className={style.accountBox}><a href="#">Hesabım</a></span>
+            <li className={style.favoritesBox}><a href="#">Favorilerim</a></li>
+            <li className={style.cartBox}><a href="#">Sepet</a></li>
+            <li className={style.accountBox}><a href="#">Hesabım</a></li>
           </ul>
         </nav>
       </div>
