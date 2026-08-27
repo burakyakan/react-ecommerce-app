@@ -9,6 +9,7 @@ import FAQ from './Faq.jsx'
 import About from './About.jsx'
 import KVKK from './KVKK.jsx'
 import PrivacyPolicy from './PrivacyPolicy.jsx'
+import TermsAndConditions from './TermsAndConditions.jsx'
 import { Routes, Route, Link } from 'react-router-dom'
 
 
@@ -29,7 +30,7 @@ function App() {
 
       if (isAlreadyFavorite) {
         return prevFavorites.filter(item => item.id !== product.id);
-        
+
       } else {
         return [...prevFavorites, product]
       }
@@ -41,17 +42,19 @@ function App() {
       <AnnouncementBar></AnnouncementBar>
       <Header></Header>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path="/urun/:category/:brand/:title/:id" element={<ProductsDetailed/>} />
-        <Route path="/sss" element={<FAQ/>} />
-        <Route path="/hakkimizda" element={<About/>} />
-        <Route path="/kvkk-aydinlatma-metni" element={<KVKK/>} />
-        <Route path="/gizlilik-sozlesmesi" element={<PrivacyPolicy/>} />
-        
+        <Route path='/' element={<Home />} />
+        <Route path="/urun/:category/:brand/:title/:id" element={<ProductsDetailed />} />
+        <Route path="/sss" element={<FAQ />} />
+        <Route path="/hakkimizda" element={<About />} />
+        <Route path="/kvkk-aydinlatma-metni" element={<KVKK />} />
+        <Route path="/gizlilik-sozlesmesi" element={<PrivacyPolicy />} />
+        <Route path="/kullanim-kosullari" element={<TermsAndConditions />} />
+
+
       </Routes>
       <Footer></Footer>
     </div>
-    
+
 
   )
 }

@@ -6,6 +6,7 @@ function FAQ() {
   return (
     <div className={style.mainBox}>
       <h2>Sıkça Sorulan Sorular</h2>
+      <p className={style.date}>Son Güncelleme: 27 Ağustos 2026</p>
 
       <div className={style.contentBox}>
 

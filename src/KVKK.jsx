@@ -5,6 +5,7 @@ function KVKK() {
   return (
     <section>
         <h2>BİRAZIBURADA.COM KİŞİSEL VERİLERİN KORUNMASI KANUNU (KVKK) AYDINLATMA METNİ</h2>
+        <p className={style.date}>Son Güncelleme: 27 Ağustos 2026</p>
 
 
       <article>

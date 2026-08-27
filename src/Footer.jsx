@@ -17,7 +17,9 @@ function Footer() {
           <a href="#">Gizlilik Sözleşmesi</a>
         </Link>
         <span> | </span>
-        <a href="#">Kullanım Koşulları</a>
+        <Link to={`/kullanim-kosullari`}>
+          <a href="#">Kullanım Koşulları</a>
+        </Link>
         <span> | </span>
         <a href="#">Mesafeli Satış Sözleşmesi</a>
         <span> | </span>

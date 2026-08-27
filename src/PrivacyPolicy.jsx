@@ -5,6 +5,7 @@ function PrivacyPolicy() {
   return (
     <div className={style.mainBox}>
       <h2 className={style.title}>Gizlilik Sözleşmesi</h2>
+      <p className={style.date}>Son Güncelleme: 27 Ağustos 2026</p>
 
       <div className={style.contentBox}>
         <h3>1. Veri Güvenliği ve Koruması Taahhüdümüz</h3>
