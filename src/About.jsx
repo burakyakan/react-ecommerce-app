@@ -22,9 +22,9 @@ function About() {
         <p>2026'da bir hayalle başlayan bu yolculukta; sattığımız her ürünün %100 orijinal ve resmi distribütör garantili olmasından, kargo süreçlerimizin hızına, şeffaf iade politikalarımızdan, satış sonrasında her an karşınızda muhatap bulabileceğiniz samimi destek ekibimize kadar her adımda bu felsefeye sadık kalıyoruz. Teknolojinin tamamını değil, ama hayatınıza gerçekten dokunacak, standartlarınızı yükseltecek en seçkin ve en doğru "birazını" sizinle buluşturmaktan mutluluk duyuyoruz.</p>
         <p className={style.centered}>Çünkü en iyi teknolojiyi seçmek bir uzmanlık işidir ve o uzmanlığın adresi birazıburada.com!</p>
 
-        <p className={style.centered}><span className={style.gold}>Kurulduğumuz günden yana her gün bizimle beraber olduğunuz için teşekkürler!</span></p>
+        <p className={style.centered}><span className={style.gold}>Kurulduğumuz günden bu yana desteğinizi bizden esirgemediğiniz için teşekkürler!</span></p>
         <p className={style.centered}><span className={style.ceoName}>Burak Yakan</span></p>
-        <p className={style.centered}><span className={style.ceoInfo}>Founder & CEO @ BirazıBurada</span></p>
+        <p className={style.centered}><span className={style.ceoInfo}>Kurucu & CEO @ BirazıBurada</span></p>
 
         <img src="src\assets\signature.png" alt="İmza" />
 
