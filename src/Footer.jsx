@@ -9,9 +9,13 @@ function Footer() {
   return (
     <footer>
       <span>
-        <a href="#">KVKK Aydınlatma Metni</a>
+        <Link to={`/kvkk-aydinlatma-metni`}>
+          <a href="#">KVKK Aydınlatma Metni</a>
+        </Link>
         <span> | </span>
-        <a href="#">Gizlilik Sözleşmesi</a>
+        <Link to={`/gizlilik-sozlesmesi`}>
+          <a href="#">Gizlilik Sözleşmesi</a>
+        </Link>
         <span> | </span>
         <a href="#">Kullanım Koşulları</a>
         <span> | </span>

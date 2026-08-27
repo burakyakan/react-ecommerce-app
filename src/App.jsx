@@ -7,8 +7,10 @@ import AnnouncementBar from './AnnouncementBar';
 import ProductsDetailed from './ProductsDetailed.jsx'
 import FAQ from './Faq.jsx'
 import About from './About.jsx'
-import KVVK from './KVKK.jsx'
+import KVKK from './KVKK.jsx'
+import PrivacyPolicy from './PrivacyPolicy.jsx'
 import { Routes, Route, Link } from 'react-router-dom'
+
 
 function App() {
 
@@ -43,6 +45,8 @@ function App() {
         <Route path="/urun/:category/:brand/:title/:id" element={<ProductsDetailed/>} />
         <Route path="/sss" element={<FAQ/>} />
         <Route path="/hakkimizda" element={<About/>} />
+        <Route path="/kvkk-aydinlatma-metni" element={<KVKK/>} />
+        <Route path="/gizlilik-sozlesmesi" element={<PrivacyPolicy/>} />
         
       </Routes>
       <Footer></Footer>

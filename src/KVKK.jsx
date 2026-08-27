@@ -1,14 +1,11 @@
 import React from 'react';
-import KVKK from  './KVKK.module.css'
+import style from  './KVKK.module.css'
 
 function KVKK() {
   return (
     <section>
-      <header>
-        <h1>BİRAZIBURADA.COM KİŞİSEL VERİLERİN KORUNMASI KANUNU (KVKK) AYDINLATMA METNİ</h1>
-      </header>
+        <h2>BİRAZIBURADA.COM KİŞİSEL VERİLERİN KORUNMASI KANUNU (KVKK) AYDINLATMA METNİ</h2>
 
-      <hr />
 
       <article>
         <h2>1. Veri Sorumlusu</h2>
