@@ -101,6 +101,10 @@ function Product() {
             <button className={style.addToFavoritesButton} onClick={addToFavorites}></button>
           </div>
 
+          <div className={style.descriptionBox}>
+            <p>{product.description}</p>
+          </div>
+
         </div>
       </div>
     </div>
