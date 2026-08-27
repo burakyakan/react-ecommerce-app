@@ -21,7 +21,7 @@ function Header() {
         <nav>
           <ul>
             <li className={style.favoritesBox}><a href="#">Favorilerim</a></li>
-            <li className={style.cartBox}><a href="#">Sepet</a><span className={style.cartProductNumber}>99</span></li>
+            <li className={style.cartBox}><a href="#">Sepet</a><span className={style.cartProductNumber}>00</span></li>
             <li className={style.accountBox}><a href="#">Hesabım</a></li>
           </ul>
         </nav>

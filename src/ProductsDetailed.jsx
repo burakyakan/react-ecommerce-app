@@ -58,42 +58,51 @@ function Product() {
           <p>Ana Sayfaya Dön</p>
         </Link>
       </div>
-      <div className={style.imgBox}>
-        <img src={product.imgUrl} alt={product.title} />
+
+      <div className={style.productContentBox}>
+
+
+        <div className={style.imgBox}>
+          <img src={product.imgUrl} alt={product.title} />
+        </div>
+
+
+        <div className={style.productInfoBox}>
+          <p className={style.category}>{product.category}</p>
+          <p className={style.brand}>{product.brand}</p>
+          <p className={style.title}>{product.title}</p>
+          <div className={style.specs}>
+            {product.layout && <span>{product.layout}</span>}
+            {product.accessories && <span>{product.accessories}</span>}
+            {product.screenSize && <span>{product.screenSize} {product.category === "Akıllı Saat" ? " mm" : "\""}</span>}
+            {product.ram && <span>{product.ram} GB</span>}
+            {product.rom && <span>{product.rom} {product.rom >= 1 && product.rom <= 4 ? "TB" : "GB"}</span>}
+            {product.connectivity && <span>{product.connectivity}</span>}
+            {product.platform && <span>{product.platform}</span>}
+            {product.age && <span>{product.category === "Oyun" ? "PEGI " : "+"} {product.age}</span>}
+            {product.genre && <span>{product.genre}</span>}
+            {product.screenResolution && <span>{product.screenResolution}</span>}
+            {product.screenRefreshRate && <span>{product.screenRefreshRate} Hz</span>}
+            {product.anc && <span>{product.anc ? "ANC" : null}</span>}
+            {product.connectionType && <span>{product.connectionType}</span>}
+            {product.screenTechnology && <span>{product.screenTechnology}</span>}
+            {product.color && <span>{product.color}</span>}
+          </div>
+
+          <div>
+            <span className={style.ratingStars}>{addRatingStars()}</span>
+            <span className={style.ratingNumber}> {product.rating}</span>
+          </div>
+
+          <p className={style.price}>{formatPrice()}</p>
+
+          <div className={style.buttonBox}>
+            <button className={style.addToBasketButton} onClick={addToBasket}>Sepete Ekle</button>
+            <button className={style.addToFavoritesButton} onClick={addToFavorites}></button>
+          </div>
+
+        </div>
       </div>
-  
-
-
-
-      <p className={style.brand}>{product.brand}</p>
-            <p className={style.title}>{product.title}</p>
-            <div className={style.specs}>
-              {product.layout && <span>{product.layout}</span>}
-              {product.accessories && <span>{product.accessories}</span>}
-              {product.screenSize && <span>{product.screenSize} {product.category === "Akıllı Saat" ? " mm" : "\""}</span>}
-              {product.ram && <span>{product.ram} GB</span>}
-              {product.rom && <span>{product.rom} {product.rom >= 1 && product.rom <= 4 ? "TB" : "GB"}</span>}
-              {product.connectivity && <span>{product.connectivity}</span>}
-              {product.platform && <span>{product.platform}</span>}
-              {product.age && <span>{product.category === "Oyun" ? "PEGI " : "+"} {product.age}</span>}
-              {product.genre && <span>{product.genre}</span>}
-              {product.screenResolution && <span>{product.screenResolution}</span>}
-              {product.screenRefreshRate && <span>{product.screenRefreshRate} Hz</span>}
-              {product.anc && <span>{product.anc ? "ANC" : null}</span>}
-              {product.connectionType && <span>{product.connectionType}</span>}
-              {product.screenTechnology && <span>{product.screenTechnology}</span>}
-              {product.color && <span>{product.color}</span>}
-            </div>
-            <div>
-              <span className={style.ratingStars}>{addRatingStars()}</span>
-              <span> {product.rating}</span>
-            </div>
-      
-            <p className={style.price}>{formatPrice()}</p>
-            <div className={style.buttonBox}>
-              <button className={style.addToBasketButton} onClick={addToBasket}>Sepete Ekle</button>
-              <button className={style.addToFavoritesButton} onClick={addToFavorites}></button>
-            </div>
     </div>
   );
 

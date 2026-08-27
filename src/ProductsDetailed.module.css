@@ -1,16 +1,17 @@
 .imgBox {
   width: min(100%, 590px);
-  height: 740px;
+  height: 780px;
   padding: 20px 35px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0;
   background-color: white;
   border: 1px solid #fafafa;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 40px;
+  margin-bottom: 40px;
 }
 
 .imgBox img {
@@ -19,6 +20,8 @@
   max-height: 700px;
   object-fit: contain;
   display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .backToHomepage {
@@ -48,15 +51,7 @@
 
 
 
-.title {
-    color: rgb(45, 45, 45);
-    font-size: 5rem;
-}
 
-.ratingStars {
-    color: rgb(245, 218, 97);
-    
-}
 
 .addToBasketButton {
     background-color: rgb(219, 170, 34);
@@ -64,7 +59,7 @@
     border: none;
     border-radius: 20px;
     padding: 12px 60px 12px 20px;
-    margin: 20px 10px;
+    margin: 20px 10px 20px 0px;
     transition: 0.3s ease;
     width: 320px;
     height: 64px;
@@ -119,3 +114,54 @@
   
 }
 
+.container {
+  margin: 0px auto;
+  max-width: 1400px;
+  padding: 0 40px;
+}
+
+.productContentBox {
+  display: flex;
+  gap: 100px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #fff;
+}
+
+.productInfoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.brand {
+  font-size: 2rem;
+}
+
+.title {
+  color: rgb(45, 45, 45);
+  font-size: 4rem;
+}
+
+.price {
+  font-size: 2.5rem;
+}
+
+.specs {
+  font-size: 2rem;
+}
+
+
+.ratingStars {
+    color: rgb(245, 218, 97);
+    
+}
+
+.ratingStars {
+  font-size: 2rem;
+}
+
+.ratingNumber {
+  font-size: 2rem;
+}
