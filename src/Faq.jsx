@@ -1,4 +1,4 @@
-import style from './FAQ.module.css'
+import style from './Faq.module.css'
 
 function FAQ() {
 
