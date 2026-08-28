@@ -1,7 +1,15 @@
 import style from './Header.module.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Header({ globalSearchTerm, setGlobalSearchTerm }) {
+
+  const navigate = useNavigate();
+
+  const handleSearchSubmit = (e) => {
+    if (e.key === 'Enter' && globalSearchTerm.trim() !== '') {
+      navigate('/');
+    }
+  };
 
 
   return (
@@ -14,7 +22,7 @@ function Header({ globalSearchTerm, setGlobalSearchTerm }) {
       </div>
 
       <div className={style.searchBarWrapper}>
-        <input className={style.searchBar} type="search" placeholder='Ürün, Kategori veya Marka Ara' value={globalSearchTerm} onChange={(e) => setGlobalSearchTerm(e.target.value)} />
+        <input className={style.searchBar} type="search" placeholder='Ürün, Kategori veya Marka Ara' value={globalSearchTerm} onChange={(e) => setGlobalSearchTerm(e.target.value)} onKeyDown={handleSearchSubmit}/>
       </div>
 
       <div className={style.menuWrapper}>
