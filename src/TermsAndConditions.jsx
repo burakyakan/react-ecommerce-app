@@ -43,7 +43,7 @@ function TermsAndConditions() {
         <p>Bu sözleşmenin uygulanmasından, yorumlanmasından veya site kullanımından doğabilecek her türlü hukuki uyuşmazlığın çözümünde Türkiye Cumhuriyeti Kanunları uygulanacak olup, İzmir Mahkemeleri ve İcra Daireleri yetkilidir.</p>
 
         <h3>7. İletişim</h3>
-        <p>Kullanım Koşulları Sözleşmesi ile ilgili her türlü soru, görüş ve öneriniz için iletisim@biraziburada.com adresi üzerinden bizimle iletişime geçebilirsiniz.</p>
+        <p>Kullanım Koşulları Sözleşmesi ile ilgili her türlü soru, görüş ve öneriniz için <strong><a href="mailto:iletisim@biraziburada.com">iletisim@biraziburada.com</a></strong> adresi üzerinden bizimle iletişime geçebilirsiniz.</p>
 
       </div>
 

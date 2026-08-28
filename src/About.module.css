@@ -40,7 +40,14 @@ p.centered {
 
 }
 
+.ceoNameRow {
+  margin-bottom: 10px !important;
+}
+
+.ceoInfoRow {
+  margin-top: 0;
+}
+
 .ceoName {
   font-size: 1.7rem;
-  margin-top: 300px;
 }

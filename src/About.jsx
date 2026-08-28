@@ -23,8 +23,8 @@ function About() {
         <p className={style.centered}>Çünkü en iyi teknolojiyi seçmek bir uzmanlık işidir ve o uzmanlığın adresi birazıburada.com!</p>
 
         <p className={style.centered}><span className={style.gold}>Kurulduğumuz günden bu yana desteğinizi bizden esirgemediğiniz için teşekkürler!</span></p>
-        <p className={style.centered}><span className={style.ceoName}>Burak Yakan</span></p>
-        <p className={style.centered}><span className={style.ceoInfo}>Kurucu & CEO @ BirazıBurada</span></p>
+        <p className={`${style.centered} ${style.ceoNameRow}`}><span className={style.ceoName}>Burak Yakan</span></p>
+        <p className={`${style.centered} ${style.ceoInfoRow}`}><span className={style.ceoInfo}>Kurucu & CEO @ BirazıBurada</span></p>
 
         <img src="src\assets\signature.png" alt="İmza" />
 

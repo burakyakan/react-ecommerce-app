@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import ScrollToTop from './ScrollToTop.jsx'
 import Header from './Header.jsx'
 import Home from './Home.jsx'
 import Footer from './Footer.jsx'
@@ -10,6 +11,7 @@ import About from './About.jsx'
 import KVKK from './KVKK.jsx'
 import PrivacyPolicy from './PrivacyPolicy.jsx'
 import TermsAndConditions from './TermsAndConditions.jsx'
+import DistanceSalesAgreement from './DistanceSalesAgreement.jsx'
 import { Routes, Route, Link } from 'react-router-dom'
 
 
@@ -39,6 +41,7 @@ function App() {
 
   return (
     <div>
+      <ScrollToTop></ScrollToTop>
       <AnnouncementBar></AnnouncementBar>
       <Header></Header>
       <Routes>
@@ -49,6 +52,7 @@ function App() {
         <Route path="/kvkk-aydinlatma-metni" element={<KVKK />} />
         <Route path="/gizlilik-sozlesmesi" element={<PrivacyPolicy />} />
         <Route path="/kullanim-kosullari" element={<TermsAndConditions />} />
+        <Route path="/mesafeli-satis-sozlesmesi" element={<DistanceSalesAgreement />} />
 
 
       </Routes>

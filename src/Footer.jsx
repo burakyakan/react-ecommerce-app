@@ -10,32 +10,34 @@ function Footer() {
     <footer>
       <span>
         <Link to={`/kvkk-aydinlatma-metni`}>
-          <a href="#">KVKK Aydınlatma Metni</a>
+          <span>KVKK Aydınlatma Metni</span>
         </Link>
         <span> | </span>
         <Link to={`/gizlilik-sozlesmesi`}>
-          <a href="#">Gizlilik Sözleşmesi</a>
+          <span>Gizlilik Sözleşmesi</span>
         </Link>
         <span> | </span>
         <Link to={`/kullanim-kosullari`}>
-          <a href="#">Kullanım Koşulları</a>
+          <span>Kullanım Koşulları</span>
         </Link>
         <span> | </span>
-        <a href="#">Mesafeli Satış Sözleşmesi</a>
+        <Link to={`/mesafeli-satis-sozlesmesi`}>
+          <span>Mesafeli Satış Sözleşmesi</span>
+        </Link>
         <span> | </span>
         <Link to={`/hakkimizda`}>
-          <a href="#">Hakkımızda</a>
+          <span>Hakkımızda</span>
         </Link>
         <span> | </span>
-        <a href="#">Kurumsal</a>
+        <span>Kurumsal</span>
         <span> | </span>
-        <a href="#">Kariyer</a>
+        <span>Kariyer</span>
         <span> | </span>
         <Link to={`/sss`}>
-          <a href="#">Sıkça Sorulan Sorular</a>
+          <span>Sıkça Sorulan Sorular</span>
         </Link>
         <span> | </span>
-        <a href="#">Müşteri Hizmetleri</a>
+        <span>Müşteri Hizmetleri</span>
       </span>
 
       <span>

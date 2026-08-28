@@ -27,6 +27,25 @@
   & img {
     width: 200px;
   }
+
+  & ul {
+    width: 750px;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-left: 50px;
+  }
+
+  & ul li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  & strong a {
+    color: black;
+  }
+
+  & li::marker {
+  color: #65522d;
+}
   
 }
 
@@ -40,7 +59,8 @@ p.centered {
 
 }
 
-.ceoName {
-  font-size: 1.7rem;
-  margin-top: 300px;
+
+.date {
+  margin-top: -30px;
+  color: #555454;
 }
