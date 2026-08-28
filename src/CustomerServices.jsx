@@ -17,9 +17,9 @@ function CustomerServices() {
           <h3>Doğrudan İletişim Kanallarımız</h3>
           <p>Size yardımcı olmak ve tüm sorularınızı yanıtlamak için buradayız. Bizimle dilediğiniz kanal üzerinden anında iletişime geçebilirsiniz:</p>
           <ul>
-            <li>Müşteri Hizmetleri Telefonu: 0850 XXX XX XXHafta içi ve Cumartesi günleri 09:00 - 19:00 saatleri arasında doğrudan uzman ekibimize bağlanabilirsiniz.</li>
-            <li>Destek E-Posta Adresi: destek@biraziburada.comGönderdiğiniz tüm e-postalara en geç 2 saat içinde incelenerek çözüm odaklı geri dönüş sağlanır.</li>
-            <li>Canlı Destek Hattı:Sitemizin sağ alt köşesinde bulunan panelden, çalışma saatleri içerisinde ekibimizle anlık olarak yazışabilir, hızlıca destek alabilirsiniz.</li>
+            <li><span className={style.goldNormal}>Müşteri Hizmetleri Telefonu:</span> <strong>0850 123 45 67</strong> Hafta içi ve Cumartesi günleri 09:00 - 19:00 saatleri arasında doğrudan uzman ekibimize bağlanabilirsiniz.</li>
+            <li><span className={style.goldNormal}>Destek E-Posta Adresi:</span> <strong><a href="mailto:destek@biraziburada.com">destek@biraziburada.com</a></strong> Gönderdiğiniz tüm e-postalara en geç 2 saat içinde incelenerek çözüm odaklı geri dönüş sağlanır.</li>
+            <li><span className={style.goldNormal}>Canlı Destek Hattı: </span>Sitemizin sağ alt köşesinde bulunan panelden, çalışma saatleri içerisinde ekibimizle anlık olarak yazışabilir, hızlıca destek alabilirsiniz.</li>
           </ul>
         </div>
 
@@ -27,9 +27,9 @@ function CustomerServices() {
           <h3>Satış Sonrası ve Teknik Servis Süreçleri</h3>
           <p>Bizim için süreç, siz sipariş verip ödemeyi tamamladığınızda veya kargonuz kapınıza ulaştığında bitmez; aksine bizim için asıl ortaklık yeni başlar.</p>
           <ul>
-            <li>İlk Kurulum Desteği: Aldığınız akıllı telefon, bilgisayar, tablet veya akıllı ev sistemlerinin ilk kurulumunda bir problem yaşarsanız, müşteri hizmetlerimizi arayarak teknik ekibimizden adım adım telefon desteği alabilirsiniz.</li>
-            <li>Yetkili Servis Köprüsü: "Biz ürünü sattık, gerisine üretici baksın" kolaycılığına kesinlikle kaçmıyoruz. Garanti süresi boyunca yaşayabileceğiniz olası teknik arızalarda, işlemlerinizin hızlanması ve mağdur olmamanız için distribütör ve resmi üretici servisleri ile aranızda güçlü bir köprü görevi üstleniyoruz.</li>
-            <li>Şeffaflık Sözü: Kargo süreçlerinde yaşanabilecek nadir lojistik gecikmelerde veya teknik aksaklıklarda gerçeği çarpıtmadan, en şeffaf haliyle sizinle paylaşıyor ve vaktinizi çalmadan anında alternatif çözümler üretiyoruz.</li>
+            <li><span className={style.goldNormal}>İlk Kurulum Desteği: </span>Aldığınız akıllı telefon, bilgisayar, tablet veya akıllı ev sistemlerinin ilk kurulumunda bir problem yaşarsanız, müşteri hizmetlerimizi arayarak teknik ekibimizden adım adım telefon desteği alabilirsiniz.</li>
+            <li><span className={style.goldNormal}>Yetkili Servis Köprüsü: </span>"Biz ürünü sattık, gerisine üretici baksın" kolaycılığına kesinlikle kaçmıyoruz. Garanti süresi boyunca yaşayabileceğiniz olası teknik arızalarda, işlemlerinizin hızlanması ve mağdur olmamanız için distribütör ve resmi üretici servisleri ile aranızda güçlü bir köprü görevi üstleniyoruz.</li>
+            <li><span className={style.goldNormal}>Şeffaflık Sözü: </span>Kargo süreçlerinde yaşanabilecek nadir lojistik gecikmelerde veya teknik aksaklıklarda gerçeği çarpıtmadan, en şeffaf haliyle sizinle paylaşıyor ve vaktinizi çalmadan anında alternatif çözümler üretiyoruz.</li>
           </ul>
         </div>
 
@@ -37,9 +37,9 @@ function CustomerServices() {
           <h3>Hızlı Çözüm Kılavuzu</h3>
           <p>Müşteri hizmetlerimize bağlanmadan önce, aşağıdaki bağlantılardan süreçlerinize dair hızlıca bilgi edinebilirsiniz:</p>
           <ul>
-            <li>Siparişinizin anlık durumunu ve kargo hareketlerini görmek için Sipariş Takibi sayfamızı ziyaret edebilirsiniz.</li>
-            <li>Kargo firmaları, teslimat süreleri ve hasarlı kargo süreçleri hakkında detaylar için Kargo ve Teslimat sayfamızı inceleyebilirsiniz.</li>
-            <li>Teknoloji ürünlerine özel yasal iade şartları ve cayma hakkı istisnaları için İade ve İptal Şartları kılavuzumuza göz atabilirsiniz.</li>
+            <li>Siparişinizin anlık durumunu ve kargo hareketlerini görmek için <b>Sipariş Takibi</b> sayfamızı ziyaret edebilirsiniz.</li>
+            <li>Kargo firmaları, teslimat süreleri ve hasarlı kargo süreçleri hakkında detaylar için <b>Kargo ve Teslimat</b> sayfamızı inceleyebilirsiniz.</li>
+            <li>Teknoloji ürünlerine özel yasal iade şartları ve cayma hakkı istisnaları için <b>İade ve İptal Şartları</b> kılavuzumuza göz atabilirsiniz.</li>
           </ul>
         </div>
       </div>

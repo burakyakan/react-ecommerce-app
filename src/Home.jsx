@@ -21,8 +21,6 @@ function Home() {
   const [selectedColor, setSelectedColor] = useState(() => sessionStorage.getItem("f_color") || "");
   const [selectedRating, setSelectedRating] = useState(() => sessionStorage.getItem("f_rating") || "");
 
-
-
   function handleCategoryChange(newCategory) {
     setCategory(newCategory);
     setInCategorySearchTerm("");
