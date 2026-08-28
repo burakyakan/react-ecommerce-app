@@ -12,7 +12,7 @@ import Filter from './Filter';
 //TODO: 
 
 
-function Home() {
+function Home({ globalSearchTerm = "", setGlobalSearchTerm }) {
 
   const [category, setCategory] = useState(() => sessionStorage.getItem("f_category") || "all");
   const [sortType, setSortType] = useState(() => sessionStorage.getItem("f_sortType") || "");
@@ -20,6 +20,17 @@ function Home() {
   const [selectedBrand, setSelectedBrand] = useState(() => sessionStorage.getItem("f_brand") || "");
   const [selectedColor, setSelectedColor] = useState(() => sessionStorage.getItem("f_color") || "");
   const [selectedRating, setSelectedRating] = useState(() => sessionStorage.getItem("f_rating") || "");
+
+  useEffect(() => {
+    if (globalSearchTerm.trim() !== "") {
+      setCategory("all");
+      setInCategorySearchTerm("");
+      setSelectedBrand("");
+      setSelectedColor("");
+      setSelectedRating("");
+      setSortType("");
+    }
+  }, [globalSearchTerm]);
 
   function handleCategoryChange(newCategory) {
     setCategory(newCategory);
@@ -35,7 +46,14 @@ function Home() {
     sessionStorage.setItem("f_color", "");
     sessionStorage.setItem("f_rating", "");
     sessionStorage.setItem("f_sortType", "");
+
+    if (setGlobalSearchTerm) {
+      setGlobalSearchTerm("");
+    }
   }
+
+
+
 
   useEffect(() => {
     sessionStorage.setItem("f_category", category);
@@ -47,21 +65,36 @@ function Home() {
   }, [category, sortType, inCategorySearchTerm, selectedBrand, selectedColor, selectedRating]);
 
 
+  const globalFilteredProducts = productsData.filter(item => {
+    const searchTerm = globalSearchTerm.toLowerCase().trim().split(/\s+/);
+    if (searchTerm.length === 0 || searchTerm[0] === "") return true;
+
+    const productValues = [item.title, item.brand, item.color, item.ram, item.age, item.anc, item.category, item.connectionType,
+    item.connectivity, item.genre, item.platform, item.rom, item.screenRefreshRate, item.screenResolution, item.screenSize, item.screenTechnology]
+      .map(valid => String(valid ?? '').toLowerCase());
+
+    return searchTerm.every(word =>
+      productValues.some(attribute => attribute.includes(word))
+    );
+  });
+
+
 
   const categoryFilteredProducts = category === "all" ? productsData : productsData.filter(item => item.category === category);
-  const availableBrands = [...new Set(categoryFilteredProducts.map(item => item.brand).filter(Boolean))].sort();
-  const availableColors = [...new Set(categoryFilteredProducts.map(item => item.color).filter(Boolean))].sort();
+  const productsForFiltering = globalSearchTerm.trim() ? globalFilteredProducts : categoryFilteredProducts;
+  const availableBrands = [...new Set(productsForFiltering.map(item => item.brand).filter(Boolean))].sort();
+  const availableColors = [...new Set(productsForFiltering.map(item => item.color).filter(Boolean))].sort();
 
-  const searchFilteredProducts = categoryFilteredProducts.filter(item => {
+  const searchFilteredProducts = productsForFiltering.filter(item => {
     const searchTerm = inCategorySearchTerm.toLowerCase().trim().split(/\s+/);
 
     if (searchTerm.length === 0 || searchTerm[0] === "") return true;
 
-    const productValues = [item.title, item.brand, item.color, item.ram, item.age, item.anc, item.category, item.connectionType, 
-      item.connectivity, item.genre, item.platform, item.rom, item.screenRefreshRate, item.screenResolution, item.screenSize, item.screenTechnology]
+    const productValues = [item.title, item.brand, item.color, item.ram, item.age, item.anc, item.category, item.connectionType,
+    item.connectivity, item.genre, item.platform, item.rom, item.screenRefreshRate, item.screenResolution, item.screenSize, item.screenTechnology]
       .map(valid => String(valid ?? '').toLowerCase());
 
-      return searchTerm.every(word => 
+    return searchTerm.every(word =>
       productValues.some(attribute => attribute.includes(word))
     );
   });
@@ -100,6 +133,10 @@ function Home() {
     );
   }, [filteredProducts, sortType]);
 
+  const displayTitle = globalSearchTerm.trim() !== "" 
+    ? `Arama Sonucu: "${globalSearchTerm}"` 
+    : (category === "all" ? "Tüm Ürünler" : category);
+
 
 
   return (
@@ -110,7 +147,7 @@ function Home() {
       </div>
 
 
-      <h2 className={style.categoryTitle}>{category === "all" ? "Tüm Ürünler" : `${category}`}</h2>
+      <h2 className={style.categoryTitle}>{displayTitle}</h2>
       <h3 className={style.productCount}>{filteredProducts.length} Ürün Bulundu</h3>
 
       <div className={style.productBar}>

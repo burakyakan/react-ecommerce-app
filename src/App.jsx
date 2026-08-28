@@ -18,6 +18,8 @@ import { Routes, Route, Link } from 'react-router-dom'
 
 function App() {
 
+  const [globalSearchTerm, setGlobalSearchTerm] = useState("");
+
   const [favorites, setFavorites] = useState(() => {
     const savedFavorites = localStorage.getItem("favorites");
     return savedFavorites ? JSON.parse(savedFavorites) : [];
@@ -44,9 +46,9 @@ function App() {
     <div>
       <ScrollToTop></ScrollToTop>
       <AnnouncementBar></AnnouncementBar>
-      <Header></Header>
+      <Header globalSearchTerm={globalSearchTerm} setGlobalSearchTerm={setGlobalSearchTerm}></Header>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home globalSearchTerm={globalSearchTerm} setGlobalSearchTerm={setGlobalSearchTerm} />} />
         <Route path="/urun/:category/:brand/:title/:id" element={<ProductsDetailed />} />
         <Route path="/sss" element={<FAQ />} />
         <Route path="/hakkimizda" element={<About />} />

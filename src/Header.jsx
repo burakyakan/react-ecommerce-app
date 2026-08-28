@@ -1,7 +1,7 @@
 import style from './Header.module.css'
 import { Link } from 'react-router-dom';
 
-function Header() {
+function Header({ globalSearchTerm, setGlobalSearchTerm }) {
 
 
   return (
@@ -14,7 +14,7 @@ function Header() {
       </div>
 
       <div className={style.searchBarWrapper}>
-        <input className={style.searchBar} type="search" placeholder='Ürün, Kategori veya Marka Ara' />
+        <input className={style.searchBar} type="search" placeholder='Ürün, Kategori veya Marka Ara' value={globalSearchTerm} onChange={(e) => setGlobalSearchTerm(e.target.value)} />
       </div>
 
       <div className={style.menuWrapper}>
