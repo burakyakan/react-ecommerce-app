@@ -7,6 +7,7 @@ footer {
     flex-direction: column;
     min-height: 100px;
     padding-top: 20px;
+    margin-top: 20px;
 
     & .divisor {
       color: #c2c2c2;
@@ -53,4 +54,25 @@ footer a {
     color: #876f40;
   }
   
+}
+
+.socialsBox {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.socialsBox a {
+  transition: filter 0.3s ease;
+
+  
+}
+
+.socialsBox a:hover {
+  filter: brightness(0) saturate(100%) invert(32%) sepia(21%) saturate(1115%) hue-rotate(346deg) brightness(73%) contrast(67%);
+}
+
+.legalNo {
+  color: #2d2d2d;
+  text-align: center;
+  line-height: 30%;
 }

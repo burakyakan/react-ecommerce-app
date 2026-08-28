@@ -12,6 +12,7 @@ import KVKK from './KVKK.jsx'
 import PrivacyPolicy from './PrivacyPolicy.jsx'
 import TermsAndConditions from './TermsAndConditions.jsx'
 import DistanceSalesAgreement from './DistanceSalesAgreement.jsx'
+import CustomerServices from './CustomerServices.jsx'
 import { Routes, Route, Link } from 'react-router-dom'
 
 
@@ -53,6 +54,7 @@ function App() {
         <Route path="/gizlilik-sozlesmesi" element={<PrivacyPolicy />} />
         <Route path="/kullanim-kosullari" element={<TermsAndConditions />} />
         <Route path="/mesafeli-satis-sozlesmesi" element={<DistanceSalesAgreement />} />
+        <Route path="/musteri-hizmetleri" element={<CustomerServices />} />
 
 
       </Routes>

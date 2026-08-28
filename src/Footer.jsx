@@ -33,14 +33,34 @@ function Footer() {
           <span>Sıkça Sorulan Sorular</span>
         </Link>
         <span className={style.divisor}> | </span>
-        <span>Müşteri Hizmetleri</span>
+        <Link to={`/musteri-hizmetleri`}>
+          <span>Müşteri Hizmetleri</span>
+        </Link>
       </span>
 
-      <span>
-        İletişim: burak@yakan.dev
-      </span>
+      <div className={style.socialsBox}>
+        <a href="https://github.com/burakyakan/react-ecommerce-app" target="_blank" rel="noopener noreferrer">
+          <img src="src\assets\instagram.svg" alt="Instagram" />
+        </a>
+        <a href="https://github.com/burakyakan/react-ecommerce-app" target="_blank" rel="noopener noreferrer">
+          <img src="src\assets\facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://github.com/burakyakan/react-ecommerce-app" target="_blank" rel="noopener noreferrer">
+          <img src="src\assets\x.svg" alt="X" />
+        </a>
+        <a href="https://github.com/burakyakan/react-ecommerce-app" target="_blank" rel="noopener noreferrer">
+          <img src="src\assets\tiktok.svg" alt="TikTok" />
+        </a>
+        <a href="https://github.com/burakyakan/react-ecommerce-app" target="_blank" rel="noopener noreferrer">
+          <img src="src\assets\youtube.svg" alt="YouTube" />
+        </a>
+        <a href="https://www.linkedin.com/in/burakyakan/" target="_blank" rel="noopener noreferrer">
+          <img src="src\assets\linkedin.svg" alt="LinkedIn" />
+        </a>
+      </div>
 
-      <span>YASAL UYARI: Bu site tamamen eğlence amaçlıdır. Bu web sitesi gerçek bir e-ticaret sitesi değildir ve kesinlikle herhangi bir hizmet vermez. Gerçek kurum ve kişileşle olan benzerlikler tamamen tesadüfidir. Kullanılan görseller ve diğer telifli içerikler ilgili telif hakkı sahibine aittir. </span>
+      <p className={style.legalNo}>BirazıBurada E-Ticaret Hizmetleri Anonim Şirketi, MERSİS No: 0622058421000015</p>
+
       <div>
 
       </div>

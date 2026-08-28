@@ -13,7 +13,7 @@ function DistanceSalesAgreement() {
         <ul>
           <li>Satıcı: biraziburada.com</li>
           <ul>
-            <li>Adres: İmzir, Türkiye</li>
+            <li>Adres: İzmir, Türkiye</li>
             <li>E-posta: destek@biraziburada.com</li>
           </ul>
           <li>Alıcı (Tüketici): biraziburada.com web sitesi üzerinden ürün sipariş eden, fatura ve teslimat adres bilgileri sipariş formunda yer alan gerçek veya tüzel kişidir.</li>
