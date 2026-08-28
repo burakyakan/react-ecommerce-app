@@ -1,8 +1,66 @@
-.contentBox {
-  font-size: 1rem;
-  
+.mainBox {
+  margin: 40px 275px 60px 275px;
 
-  & details {
-  
+  & h2 {
+    font-size: 4rem;
+    color: #555454;
   }
+  
+}
+
+.contentBox {
+  color: #2d2d2d;
+
+  & p {
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+
+  & h3 {
+    font-size: 1.5rem;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    color: #65522d;
+  }
+  
+  & img {
+    width: 200px;
+  }
+
+  & ul {
+    width: 750px;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-left: 50px;
+  }
+
+  & ul li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  & strong a {
+    color: black;
+  }
+
+  & li::marker {
+  color: #65522d;
+}
+  
+}
+
+p.centered {
+  text-align: center;
+}
+
+.gold {
+  color: #65522d;
+  font-weight: bold;
+
+}
+
+
+.date {
+  margin-top: -30px;
+  color: #555454;
 }

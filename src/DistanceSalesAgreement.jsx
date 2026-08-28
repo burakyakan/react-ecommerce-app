@@ -36,7 +36,7 @@ function DistanceSalesAgreement() {
         <h3>5. Cayma Hakkı</h3>
         <ul>
           <li>Alıcı; malı teslim aldığı tarihten itibaren 14 (ondört) gün içinde, hiçbir hukuki ve cezai sorumluluk üstlenmeksizin ve hiçbir gerekçe göstermeksizin malı reddederek sözleşmeden cayma hakkına sahiptir.</li>
-          <li>Cayma hakkının kullanılması için bu süre içinde Satıcı'ya destek@biraziburada.com e-posta adresi üzerinden yazılı bildirimde bulunulması ve ürünün 6. madde hükümleri çerçevesinde kullanılmamış, ambalajının açılmamış/zarar görmemiş olması şarttır.</li>
+          <li>Cayma hakkının kullanılması için bu süre içinde Satıcı'ya <strong><a href="mailto:destek@biraziburada.com">destek@biraziburada.com</a></strong> e-posta adresi üzerinden yazılı bildirimde bulunulması ve ürünün 6. madde hükümleri çerçevesinde kullanılmamış, ambalajının açılmamış/zarar görmemiş olması şarttır.</li>
         </ul>
 
         <h3>6. Cayma Hakkı Kullanılamayacak Ürünler (Teknoloji Ürünleri İstisnası)</h3>
@@ -44,7 +44,7 @@ function DistanceSalesAgreement() {
         <ul>
           <li>Alıcı tarafından ambalajı, koruma bandı, mührü veya paketi açılmış olan ve iadesi sağlık veya hijyen açısından uygun olmayan ürünler.</li>
           <li>Kutusu açılmış, koruma bandı yırtılmış veya kurulumu yapılmış akıllı telefonlar, bilgisayarlar, tabletler, akıllı saatler ve yazılım/lisans içeren dijital teknoloji ürünleri (Bu ürünler ambalajı açıldığı an tekrar satılabilirlik özelliğini yitirdiği için yasal olarak iade kapsamı dışındadır).</li>
-          <li>Alıcı’nın istekleri veya açıkça onun kişisel ihtiyaçları doğrultusunda hazırlanan (örn: kişiye özel toplanan bilgisayar kasaları) ürünler.</li>
+          <li>Alıcı’nın istekleri veya açıkça onun kişisel ihtiyaçları doğrultusunda hazırlanan (Örnek: kişiye özel toplanan bilgisayar kasaları) ürünler.</li>
         </ul>
 
         <h3>7. Uyuşmazlıkların Çözümü</h3>
@@ -52,7 +52,7 @@ function DistanceSalesAgreement() {
 
         <h3>8. Yürürlük</h3>
         <p>Alıcı, web sitesi üzerinden verdiği siparişe ait ödeme işlemini gerçekleştirdiğinde işbu sözleşmenin tüm şartlarını kabul etmiş sayılır. Satıcı, siparişin gerçekleşmesi öncesinde işbu sözleşmenin sitede Alıcı tarafından okunup onaylandığına dair gerekli yazılımsal düzenlemeleri yapmakla yükümlüdür.</p>
-
+        
 
 
 
