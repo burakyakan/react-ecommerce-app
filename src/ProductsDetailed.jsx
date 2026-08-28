@@ -54,7 +54,7 @@ function Product() {
   return (
     <div className={style.container}>
       <div className={style.backToHomepage}>
-        <Link to={`/`}>
+        <Link state={{ keepPosition: true }} to={`/`}>
           <p>Ana Sayfaya Dön</p>
         </Link>
       </div>

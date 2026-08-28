@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import Product from './Products';
 import productsData from './products.json'
 import style from './Home.module.css'
@@ -14,12 +14,13 @@ import Filter from './Filter';
 
 function Home() {
 
-  const [category, setCategory] = useState("all");
-  const [sortType, setSortType] = useState("");
-  const [inCategorySearchTerm, setInCategorySearchTerm] = useState("");
-  const [selectedBrand, setSelectedBrand] = useState("");
-  const [selectedColor, setSelectedColor] = useState("");
-  const [selectedRating, setSelectedRating] = useState("");
+  const [category, setCategory] = useState(() => sessionStorage.getItem("f_category") || "all");
+  const [sortType, setSortType] = useState(() => sessionStorage.getItem("f_sortType") || "");
+  const [inCategorySearchTerm, setInCategorySearchTerm] = useState(() => sessionStorage.getItem("f_search") || "");
+  const [selectedBrand, setSelectedBrand] = useState(() => sessionStorage.getItem("f_brand") || "");
+  const [selectedColor, setSelectedColor] = useState(() => sessionStorage.getItem("f_color") || "");
+  const [selectedRating, setSelectedRating] = useState(() => sessionStorage.getItem("f_rating") || "");
+
 
 
   function handleCategoryChange(newCategory) {
@@ -29,7 +30,25 @@ function Home() {
     setSelectedColor("");
     setSelectedRating("");
     setSortType("");
+
+    sessionStorage.setItem("f_category", newCategory);
+    sessionStorage.setItem("f_search", "");
+    sessionStorage.setItem("f_brand", "");
+    sessionStorage.setItem("f_color", "");
+    sessionStorage.setItem("f_rating", "");
+    sessionStorage.setItem("f_sortType", "");
   }
+
+  useEffect(() => {
+    sessionStorage.setItem("f_category", category);
+    sessionStorage.setItem("f_sortType", sortType);
+    sessionStorage.setItem("f_search", inCategorySearchTerm);
+    sessionStorage.setItem("f_brand", selectedBrand);
+    sessionStorage.setItem("f_color", selectedColor);
+    sessionStorage.setItem("f_rating", selectedRating);
+  }, [category, sortType, inCategorySearchTerm, selectedBrand, selectedColor, selectedRating]);
+
+
 
   const categoryFilteredProducts = category === "all" ? productsData : productsData.filter(item => item.category === category);
   const availableBrands = [...new Set(categoryFilteredProducts.map(item => item.brand).filter(Boolean))].sort();
