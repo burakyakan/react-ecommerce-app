@@ -69,7 +69,7 @@ function Home({ globalSearchTerm = "", setGlobalSearchTerm }) {
     const searchTerm = globalSearchTerm.toLowerCase().trim().split(/\s+/);
     if (searchTerm.length === 0 || searchTerm[0] === "") return true;
 
-    const productValues = [item.title, item.brand, item.color, item.ram, item.age, item.anc, item.category, item.connectionType,
+    const productValues = [item.keywords, item.title, item.brand, item.color, item.ram, item.age, item.anc, item.category, item.connectionType,
     item.connectivity, item.genre, item.platform, item.rom, item.screenRefreshRate, item.screenResolution, item.screenSize, item.screenTechnology]
       .map(valid => String(valid ?? '').toLowerCase());
 
@@ -90,7 +90,7 @@ function Home({ globalSearchTerm = "", setGlobalSearchTerm }) {
 
     if (searchTerm.length === 0 || searchTerm[0] === "") return true;
 
-    const productValues = [item.title, item.brand, item.color, item.ram, item.age, item.anc, item.category, item.connectionType,
+    const productValues = [item.keywords, item.title, item.brand, item.color, item.ram, item.age, item.anc, item.category, item.connectionType,
     item.connectivity, item.genre, item.platform, item.rom, item.screenRefreshRate, item.screenResolution, item.screenSize, item.screenTechnology]
       .map(valid => String(valid ?? '').toLowerCase());
 
