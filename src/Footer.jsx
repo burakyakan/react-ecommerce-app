@@ -1,6 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import style from './Footer.module.css'
 import { Link } from "react-router-dom";
+import instagramIcon from './assets/instagram.svg';
+import facebookIcon from './assets/facebook.svg';
+import xIcon from './assets/x.svg';
+import tiktokIcon from './assets/tiktok.svg';
+import youtubeIcon from './assets/youtube.svg';
+import linkedinIcon from './assets/linkedin.svg';
 
 function Footer() {
 
@@ -40,22 +46,22 @@ function Footer() {
 
       <div className={style.socialsBox}>
         <a href="https://github.com/burakyakan/react-ecommerce-app" target="_blank" rel="noopener noreferrer">
-          <img src="src\assets\instagram.svg" alt="Instagram" />
+          <img src={instagramIcon} alt="Instagram" />
         </a>
         <a href="https://github.com/burakyakan/react-ecommerce-app" target="_blank" rel="noopener noreferrer">
-          <img src="src\assets\facebook.svg" alt="Facebook" />
+          <img src={facebookIcon} alt="Facebook" />
         </a>
         <a href="https://github.com/burakyakan/react-ecommerce-app" target="_blank" rel="noopener noreferrer">
-          <img src="src\assets\x.svg" alt="X" />
+          <img src={xIcon} alt="X" />
         </a>
         <a href="https://github.com/burakyakan/react-ecommerce-app" target="_blank" rel="noopener noreferrer">
-          <img src="src\assets\tiktok.svg" alt="TikTok" />
+          <img src={tiktokIcon} alt="TikTok" />
         </a>
         <a href="https://github.com/burakyakan/react-ecommerce-app" target="_blank" rel="noopener noreferrer">
-          <img src="src\assets\youtube.svg" alt="YouTube" />
+          <img src={youtubeIcon} alt="YouTube" />
         </a>
         <a href="https://www.linkedin.com/in/burakyakan/" target="_blank" rel="noopener noreferrer">
-          <img src="src\assets\linkedin.svg" alt="LinkedIn" />
+          <img src={linkedinIcon} alt="LinkedIn" />
         </a>
       </div>
 
