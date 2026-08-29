@@ -49,7 +49,7 @@ function App() {
       <Header globalSearchTerm={globalSearchTerm} setGlobalSearchTerm={setGlobalSearchTerm}></Header>
       <Routes>
         <Route path='/' element={<Home globalSearchTerm={globalSearchTerm} setGlobalSearchTerm={setGlobalSearchTerm} />} />
-        <Route path="/urun/:category/:brand/:title/:id" element={<ProductsDetailed />} />
+        <Route path="/urun/:category/:brand/:title/:id" element={<ProductsDetailed globalSearchTerm={globalSearchTerm} setGlobalSearchTerm={setGlobalSearchTerm} />} />
         <Route path="/sss" element={<FAQ />} />
         <Route path="/hakkimizda" element={<About />} />
         <Route path="/kvkk-aydinlatma-metni" element={<KVKK />} />

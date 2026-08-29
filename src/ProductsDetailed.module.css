@@ -175,3 +175,93 @@
   text-align: justify;
   color: #484848;
 }
+
+.filterRow {
+  display: flex;
+  justify-content: center;
+  padding: 15px 24px 15px;
+  border-bottom: 1px solid #c2c2c2;
+  background-color: #F9F9F8;
+  margin-bottom: 15px;
+}
+
+.breadCrumb {
+  padding: 12px 0;
+  margin-bottom: 20px;
+  padding-left: 24px;
+
+  & ol {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 8px;
+    font-size: 1.2rem;
+  }
+
+  & li {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child)::after {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-left: 8px;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNjMmMyYzIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jaGV2cm9uLXJpZ2h0LWljb24gbHVjaWRlLWNoZXZyb24tcmlnaHQiPjxwYXRoIGQ9Im05IDE4IDYtNi02LTYiLz48L3N2Zz4=");      
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      pointer-events: none; 
+      user-select: none;
+    }
+  }
+
+  & button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: #3d4047;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    user-select: none;
+    -webkit-user-select: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    & svg {
+      height: 28px;
+      width: 28px;
+      stroke: currentColor; 
+    }
+
+
+
+    &:hover {
+      color: #25272d;
+    }
+
+    &:focus-visible {
+      outline: 2px solid #65522d;
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+  }
+
+  & button[aria-current="page"] {
+    color: #565b64;
+
+    &:hover {
+      color: #484c53;
+    }
+    
+
+  }
+}
