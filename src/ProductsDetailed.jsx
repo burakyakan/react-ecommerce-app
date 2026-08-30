@@ -72,14 +72,6 @@ function ProductsDetailed({ globalSearchTerm, setGlobalSearchTerm }) {
 
 
       <div className={style.container}>
-
-
-        {/* <div className={style.backToHomepage}>
-          <Link state={{ keepPosition: true }} to={`/`}>
-            <p>Ana Sayfaya Dön</p>
-          </Link>
-        </div> */}
-
         <div className={style.breadCrumb}>
           <nav>
             <ol>

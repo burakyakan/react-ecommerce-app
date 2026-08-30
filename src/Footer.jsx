@@ -14,35 +14,37 @@ function Footer() {
 
   return (
     <footer>
-      <span>
-        <Link to={`/kvkk-aydinlatma-metni`}>
-          <span>KVKK Aydınlatma Metni</span>
-        </Link>
-        <span className={style.divisor}> | </span>
-        <Link to={`/gizlilik-sozlesmesi`}>
-          <span>Gizlilik Sözleşmesi</span>
-        </Link>
-        <span className={style.divisor}> | </span>
-        <Link to={`/kullanim-kosullari`}>
-          <span>Kullanım Koşulları</span>
-        </Link>
-        <span className={style.divisor}> | </span>
-        <Link to={`/mesafeli-satis-sozlesmesi`}>
-          <span>Mesafeli Satış Sözleşmesi</span>
-        </Link>
-        <span className={style.divisor}> | </span>
-        <Link to={`/hakkimizda`}>
-          <span>Hakkımızda</span>
-        </Link>
-        <span className={style.divisor}> | </span>
-        <Link to={`/sss`}>
-          <span>Sıkça Sorulan Sorular</span>
-        </Link>
-        <span className={style.divisor}> | </span>
-        <Link to={`/musteri-hizmetleri`}>
-          <span>Müşteri Hizmetleri</span>
-        </Link>
-      </span>
+      <div className={style.links}>
+        <span>
+          <Link to={`/kvkk-aydinlatma-metni`}>
+            <span>KVKK Aydınlatma Metni</span>
+          </Link>
+          <span className={style.divisor}> | </span>
+          <Link to={`/gizlilik-sozlesmesi`}>
+            <span>Gizlilik Sözleşmesi</span>
+          </Link>
+          <span className={style.divisor}> | </span>
+          <Link to={`/kullanim-kosullari`}>
+            <span>Kullanım Koşulları</span>
+          </Link>
+          <span className={style.divisor}> | </span>
+          <Link to={`/mesafeli-satis-sozlesmesi`}>
+            <span>Mesafeli Satış Sözleşmesi</span>
+          </Link>
+          <span className={style.divisor}> | </span>
+          <Link to={`/hakkimizda`}>
+            <span>Hakkımızda</span>
+          </Link>
+          <span className={style.divisor}> | </span>
+          <Link to={`/sss`}>
+            <span>Sıkça Sorulan Sorular</span>
+          </Link>
+          <span className={style.divisor}> | </span>
+          <Link to={`/musteri-hizmetleri`}>
+            <span>Müşteri Hizmetleri</span>
+          </Link>
+        </span>
+      </div>
 
       <div className={style.socialsBox}>
         <a href="https://github.com/burakyakan/react-ecommerce-app" target="_blank" rel="noopener noreferrer">

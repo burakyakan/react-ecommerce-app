@@ -4,12 +4,9 @@ import productsData from './products.json'
 import style from './Home.module.css'
 import Filter from './Filter';
 
-//TODO: Link ile artık öbür sitelere gitme gelmeli,
-//TODO: Product Detailed Sayfasını yap artık.
 //TODO: Sepete Ekleme ve Likelama fonksiyonu.
-//TODO: Genel search bar çalışmalı.
-//TODO: Sepet ve hesabım düğmeleri çalıştır.
-//TODO: 
+//TODO: Sepet, favoriler ve hesabım düğmeleri çalıştır.
+//TODO: Başa dön butonu (ayrıca text sayfaları için.)
 
 
 function Home({ globalSearchTerm = "", setGlobalSearchTerm }) {
