@@ -18,7 +18,7 @@
   }
 
   & h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-top: 60px;
     margin-bottom: 15px;
     color: #65522d;
@@ -45,7 +45,31 @@
 
   & li::marker {
   color: #65522d;
+  }
+
+  & ::details-content {
+    
+  }
+
+  & details {
+    background: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    & p {
+      margin-top: 10px;
+      color: #383838;
+    }
+
 }
+
+
+  & summary {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
   
 }
 
@@ -64,3 +88,4 @@ p.centered {
   margin-top: -30px;
   color: #555454;
 }
+
