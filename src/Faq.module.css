@@ -47,10 +47,6 @@
   color: #65522d;
   }
 
-  & ::details-content {
-    
-  }
-
   & details {
     background: #ffffff;
     margin-bottom: 10px;

@@ -1,7 +1,7 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import Product from './Products';
-import productsData from './products.json'
-import style from './Home.module.css'
+import productsData from './products.json';
+import style from './Home.module.css';
 import Filter from './Filter';
 
 //TODO: Sepete Ekleme ve Likelama fonksiyonu.

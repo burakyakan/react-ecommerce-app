@@ -1,0 +1,106 @@
+.container {
+  height: 160px;
+  border: 2px solid rgb(251, 251, 251);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  & img {
+    height: 160px;
+    width: 160px;
+    object-fit: contain;
+  }
+
+  & .productInfo {
+    color: #000;
+
+    & .title {
+      color: #2d2d2d;
+      font-size: 3.8rem;
+      font-weight: 500;
+      line-height: 110%;
+      text-align: left;
+    }
+
+    & .price {
+      font-size: 3rem;
+      color: #2d2d2d;
+      color: #25272d;
+      font-weight: 400;
+    }
+
+    & .specs {
+      color: #565b64;
+      font-size: 0.7rem;
+    }
+
+    & .specs span:not(:last-child)::after {
+      content: " • ";
+    }
+  }
+
+}
+
+.quantityBox {
+  display: flex;
+  flex-direction: row;
+
+
+  & .amountChangeBox {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #c2c2c2;
+    padding: 5px;
+    border-radius: 20px;
+    
+
+
+    & .decreaseAmountButton {
+      border: none;
+      cursor: pointer;
+      width: 20px;
+      background: none;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NTUyMmQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1taW51cy1pY29uIGx1Y2lkZS1taW51cyI+PHBhdGggZD0iTTUgMTJoMTQiLz48L3N2Zz4=");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 20px 20px;
+      
+    }
+
+    & .increaseAmountButton {
+      border: none;
+      cursor: pointer;
+      width: 20px;
+      background: none;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NTUyMmQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1wbHVzLWljb24gbHVjaWRlLXBsdXMiPjxwYXRoIGQ9Ik01IDEyaDE0Ii8+PHBhdGggZD0iTTEyIDV2MTQiLz48L3N2Zz4=");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 20px 20px;
+    }
+
+    & .amountText {
+      color: #2d2d2d;
+      font-weight: 500;
+      line-height: 100%;
+      font-size: 1.5rem;
+      padding: 5px 5px;
+    }
+  }
+
+  & .removeItemButton {
+      border: none;
+      cursor: pointer;
+      width: 20px;
+      background: none;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NTUyMmQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS10cmFzaDItaWNvbiBsdWNpZGUtdHJhc2gtMiI+PHBhdGggZD0iTTEwIDExdjYiLz48cGF0aCBkPSJNMTQgMTF2NiIvPjxwYXRoIGQ9Ik0xOSA2djE0YTIgMiAwIDAgMS0yIDJIN2EyIDIgMCAwIDEtMi0yVjYiLz48cGF0aCBkPSJNMyA2aDE4Ii8+PHBhdGggZD0iTTggNlY0YTIgMiAwIDAgMSAyLTJoNGEyIDIgMCAwIDEgMiAydjIiLz48L3N2Zz4=");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 20px 20px;
+    }
+
+
+}

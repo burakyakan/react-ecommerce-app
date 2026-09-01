@@ -12,7 +12,6 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 40px;
   margin-bottom: 40px;
-
   flex-shrink: 0;
 }
 
@@ -26,52 +25,24 @@
   padding-bottom: 20px;
 }
 
-.backToHomepage {
-  width: 180px;
-  color: #757575;
-  font-size: 1.2rem;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM3NTc1NzUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1tb3ZlLWxlZnQtaWNvbiBsdWNpZGUtbW92ZS1sZWZ0Ij48cGF0aCBkPSJNNiA4TDIgMTJMNiAxNiIvPjxwYXRoIGQ9Ik0yIDEySDIyIi8+PC9zdmc+");
-  background-repeat: no-repeat;
-  background-size: 25px 25px;
-  background-position: left 10px center;
-  margin: 20px;
-  cursor: pointer;
-  padding-left: 30px;
-  line-height: 1;
-
-  & a {
-    color: #757575;
-  }
-
-  & a:hover {
-    color: #484848;
-  }
-}
-
-
-
-
-
-
-
-
 .addToBasketButton {
     background-color: rgb(219, 170, 34);
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 20px;
-    padding: 12px 60px 12px 20px;
+    padding: 12px 40px 12px 0px;
     margin: 20px 10px 20px 0px;
     transition: 0.3s ease;
-    width: 320px;
+    width: 500px;
     height: 64px;
     cursor: pointer;
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1zaG9wcGluZy1iYXNrZXQtaWNvbiBsdWNpZGUtc2hvcHBpbmctYmFza2V0Ij48cGF0aCBkPSJtMTUgMTEtMSA5Ii8+PHBhdGggZD0ibTE5IDExLTQtNyIvPjxwYXRoIGQ9Ik0yIDExaDIwIi8+PHBhdGggZD0ibTMuNSAxMSAxLjYgNy40YTIgMiAwIDAgMCAyIDEuNmg5LjhhMiAyIDAgMCAwIDItMS42bDEuNy03LjQiLz48cGF0aCBkPSJNNC41IDE1LjVoMTUiLz48cGF0aCBkPSJtNSAxMSA0LTciLz48cGF0aCBkPSJtOSAxMSAxIDkiLz48L3N2Zz4=");
     background-repeat: no-repeat;
-    background-position: right 30px center;
+    background-position: right 110px center;
     background-size: 40px 40px;
     font-weight: bold;
     font-size: 2rem;
+    text-align: center;
 }
 
 .addToBasketButton:hover {
@@ -89,8 +60,8 @@
     border: none;
     border-radius: 20px;
     padding: 12px 20px;
-    margin: 20px 10px;
-    width: 120px;
+    margin: 20px 15px;
+    width: 160px;
     cursor: pointer;
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1oZWFydC1pY29uIGx1Y2lkZS1oZWFydCI+PHBhdGggZD0iTTIgOS41YTUuNSA1LjUgMCAwIDEgOS41OTEtMy42NzYuNTYuNTYgMCAwIDAgLjgxOCAwQTUuNDkgNS40OSAwIDAgMSAyMiA5LjVjMCAyLjI5LTEuNSA0LTMgNS41bC01LjQ5MiA1LjMxM2EyIDIgMCAwIDEtMyAuMDE5TDUgMTVjLTEuNS0xLjUtMy0zLjItMy01LjUiLz48L3N2Zz4=");
     background-repeat: no-repeat;
@@ -118,7 +89,7 @@
 
 .container {
   margin: 0px auto;
-  max-width: 1400px;
+  max-width: 1375px;
   padding: 0 40px;
 }
 
@@ -135,45 +106,59 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
-
-  flex: 1;         /* Kalan boşluğu doldurur */
+  flex: 1;
   min-width: 0;
 }
 
+.category {
+  font-size: 1.4rem;
+  color: #565b64;
+  font-weight: 300;
+  line-height: 100%;
+}
+
+
 .brand {
   font-size: 2rem;
+  color: #3d4047;
+  line-height: 100%;
 }
 
 .title {
-  color: rgb(45, 45, 45);
-  font-size: 4rem;
+  color: #2d2d2d;
+  font-size: 3.8rem;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
 }
 
 .price {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  color: #2d2d2d;
+  color: #25272d;
+  font-weight: 400;
 }
 
 .specs {
-  font-size: 2rem;
+  color: #565b64;
+  font-size: 1.7rem;
 }
 
 
 .ratingStars {
-    color: rgb(245, 218, 97);
-    
-}
-
-.ratingStars {
+  color: rgb(245, 218, 97);
   font-size: 2rem;
 }
 
 .ratingNumber {
   font-size: 2rem;
+  color: #565b64;
 }
 
 .descriptionBox {
   text-align: justify;
   color: #484848;
+  font-size: 1.1rem;
 }
 
 .filterRow {

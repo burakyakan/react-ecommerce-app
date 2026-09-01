@@ -22,15 +22,27 @@ function Header({ globalSearchTerm, setGlobalSearchTerm }) {
       </div>
 
       <div className={style.searchBarWrapper}>
-        <input className={style.searchBar} type="search" placeholder='Ürün, Kategori veya Marka Ara' value={globalSearchTerm} onChange={(e) => setGlobalSearchTerm(e.target.value)} onKeyDown={handleSearchSubmit}/>
+        <input className={style.searchBar} type="search" placeholder='Ürün, Kategori veya Marka Ara' value={globalSearchTerm} onChange={(e) => setGlobalSearchTerm(e.target.value)} onKeyDown={handleSearchSubmit} />
       </div>
 
       <div className={style.menuWrapper}>
         <nav>
           <ul>
-            <li className={style.favoritesBox}><a href="#">Favorilerim</a></li>
-            <li className={style.cartBox}><a href="#">Sepet</a><span className={style.cartProductNumber}>00</span></li>
-            <li className={style.accountBox}><a href="#">Hesabım</a></li>
+            <div className={style.favoritesBox}>
+              <Link to={'/favorilerim'}>
+                <li><span className={style.menuText}>Favorilerim</span></li>
+              </Link>
+            </div>
+            <div className={style.cartBox}>
+              <Link to={'/sepet'}>
+                <li><span className={style.menuText}>Sepet</span><span className={style.cartProductNumber}>0</span></li>
+              </Link>
+            </div>
+            <div className={style.accountBox}>
+              <Link to={'/hesabim'}>
+                <li><span className={style.menuText}>Hesabım</span></li>
+              </Link>
+            </div>  
           </ul>
         </nav>
       </div>

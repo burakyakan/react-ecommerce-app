@@ -13,6 +13,7 @@ import PrivacyPolicy from './PrivacyPolicy.jsx'
 import TermsAndConditions from './TermsAndConditions.jsx'
 import DistanceSalesAgreement from './DistanceSalesAgreement.jsx'
 import CustomerServices from './CustomerServices.jsx'
+import Cart from './Cart.jsx'
 import { Routes, Route, Link } from 'react-router-dom'
 
 
@@ -50,6 +51,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home globalSearchTerm={globalSearchTerm} setGlobalSearchTerm={setGlobalSearchTerm} />} />
         <Route path="/urun/:category/:brand/:title/:id" element={<ProductsDetailed globalSearchTerm={globalSearchTerm} setGlobalSearchTerm={setGlobalSearchTerm} />} />
+        <Route path='/sepet' element={<Cart />} />
         <Route path="/sss" element={<FAQ />} />
         <Route path="/hakkimizda" element={<About />} />
         <Route path="/kvkk-aydinlatma-metni" element={<KVKK />} />
