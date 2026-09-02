@@ -51,49 +51,53 @@ function CartedProduct(props) {
 
       </div>
 
-      <div className={style.productInfo}>
-        <p className={style.brand}>{props.brand}</p>
-        <p className={style.title}>{props.title}</p>
-        <div className={style.specs}>
-          {props.layout && <span>{props.layout}</span>}
-          {props.accessories && <span>{props.accessories}</span>}
-          {props.screenSize && <span>{props.screenSize} {props.category === "Akıllı Saat" ? " mm" : "\""}</span>}
-          {props.ram && <span>{props.ram} GB</span>}
-          {props.rom && <span>{props.rom} {props.rom >= 1 && props.rom <= 4 ? "TB" : "GB"}</span>}
-          {props.connectivity && <span>{props.connectivity}</span>}
-          {props.platform && <span>{props.platform}</span>}
-          {props.age && <span>{props.category === "Oyun" ? "PEGI " : "+"} {props.age}</span>}
-          {props.genre && <span>{props.genre}</span>}
-          {props.screenResolution && <span>{props.screenResolution}</span>}
-          {props.screenRefreshRate && <span>{props.screenRefreshRate} Hz</span>}
-          {props.anc && <span>{props.anc ? "ANC" : null}</span>}
-          {props.connectionType && <span>{props.connectionType}</span>}
-          {props.screenTechnology && <span>{props.screenTechnology}</span>}
-          {props.color && <span>{props.color}</span>}
+      <div className={style.centerContainer}>
+        <div className={style.productInfo}>
+          <p className={style.brand}>{props.brand}</p>
+          <p className={style.title}>{props.title}</p>
+          <div className={style.specs}>
+            {props.layout && <span>{props.layout}</span>}
+            {props.accessories && <span>{props.accessories}</span>}
+            {props.screenSize && <span>{props.screenSize} {props.category === "Akıllı Saat" ? " mm" : "\""}</span>}
+            {props.ram && <span>{props.ram} GB</span>}
+            {props.rom && <span>{props.rom} {props.rom >= 1 && props.rom <= 4 ? "TB" : "GB"}</span>}
+            {props.connectivity && <span>{props.connectivity}</span>}
+            {props.platform && <span>{props.platform}</span>}
+            {props.age && <span>{props.category === "Oyun" ? "PEGI " : "+"} {props.age}</span>}
+            {props.genre && <span>{props.genre}</span>}
+            {props.screenResolution && <span>{props.screenResolution}</span>}
+            {props.screenRefreshRate && <span>{props.screenRefreshRate} Hz</span>}
+            {props.anc && <span>{props.anc ? "ANC" : null}</span>}
+            {props.connectionType && <span>{props.connectionType}</span>}
+            {props.screenTechnology && <span>{props.screenTechnology}</span>}
+            {props.color && <span>{props.color}</span>}
+          </div>
+        </div>
+        <div className={style.quantityBox}>
+          <div className={style.amountChangeBox}>
+            <button className={style.decreaseAmountButton} onClick={addToBasket}></button>
+            <span className={style.amountText}>1</span>
+            <button className={style.increaseAmountButton} onClick={addToFavorites}></button>
+          </div>
+          <button className={style.removeItemButton} onClick={addToFavorites}></button>
+          <button className={style.favoriteItemButton} onClick={addToFavorites}></button>
+
         </div>
       </div>
 
-      <div>
-        <span className={style.ratingStars}>{addRatingStars()}</span>
-        <span> {props.rating}</span>
-      </div>
-
-
-      <div>
-        <p className={style.price}>{formatPrice()}</p>
-      </div>
-
-      <div className={style.quantityBox}>
-        <div className={style.amountChangeBox}>
-          <button className={style.decreaseAmountButton} onClick={addToBasket}></button>
-          <span className={style.amountText}>1</span>
-          <button className={style.increaseAmountButton} onClick={addToFavorites}></button>
+      <div className={style.rightContainer}>
+        <div>
+          <span className={style.ratingStars}>{addRatingStars()}</span>
+          <span className={style.ratingNumber}> {props.rating}</span>
         </div>
 
 
-        <button className={style.removeItemButton} onClick={addToFavorites}></button>
-
+        <div>
+          <p className={style.price}>{formatPrice()}</p>
+        </div>
       </div>
+
+
 
     </div>
   );

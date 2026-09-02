@@ -17,29 +17,36 @@
 
   & .productInfo {
     color: #000;
+    max-width: 500px;
+
+    & .brand {
+      color: #3d4047;
+      text-align: left;
+    }
 
     & .title {
       color: #2d2d2d;
-      font-size: 3.8rem;
+      font-size: 2rem;
       font-weight: 500;
-      line-height: 110%;
+      line-height: 120%;
       text-align: left;
     }
 
     & .price {
       font-size: 3rem;
       color: #2d2d2d;
-      color: #25272d;
       font-weight: 400;
+      text-align: left;
     }
 
     & .specs {
       color: #565b64;
-      font-size: 0.7rem;
+      font-size: 1.2rem;
     }
 
     & .specs span:not(:last-child)::after {
       content: " • ";
+      color: #65522d;
     }
   }
 
@@ -48,16 +55,15 @@
 .quantityBox {
   display: flex;
   flex-direction: row;
+  gap: 10px;
 
 
   & .amountChangeBox {
     display: flex;
     flex-direction: row;
     border: 1px solid #c2c2c2;
-    padding: 5px;
-    border-radius: 20px;
-    
-
+    padding: 0;
+    border-radius: 30px;
 
     & .decreaseAmountButton {
       border: none;
@@ -68,6 +74,8 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 20px 20px;
+      margin-left: 10px;
+      margin-right: 10px;
       
     }
 
@@ -80,14 +88,18 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 20px 20px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
 
     & .amountText {
       color: #2d2d2d;
       font-weight: 500;
       line-height: 100%;
-      font-size: 1.5rem;
-      padding: 5px 5px;
+      font-size: 1.8rem;
+      padding: 2px 5px;
+      text-align: center;
+      width: 30px;
     }
   }
 
@@ -100,7 +112,68 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 20px 20px;
+      border: 1px solid #c2c2c2;
+      border-radius: 30px;
+      width: 34.8px;
     }
 
+  & .favoriteItemButton {
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    background: none;
+    background-image: url("");
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NTUyMmQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1ib29rbWFyay1pY29uIGx1Y2lkZS1ib29rbWFyayI+PHBhdGggZD0iTTE3IDNhMiAyIDAgMCAxIDIgMnYxNWExIDEgMCAwIDEtMS40OTYuODY4bC00LjUxMi0yLjU3OGEyIDIgMCAwIDAtMS45ODQgMGwtNC41MTIgMi41NzhBMSAxIDAgMCAxIDUgMjBWNWEyIDIgMCAwIDEgMi0yeiIvPjwvc3ZnPg==");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+    border: 1px solid #c2c2c2;
+    border-radius: 30px;
+    width: 34.8px;
+    transition: transform 0.5s ease-in-out;
 
+    &:hover {
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NTUyMmQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1ib29rbWFyay1wbHVzLWljb24gbHVjaWRlLWJvb2ttYXJrLXBsdXMiPjxwYXRoIGQ9Ik0xMiA3djYiLz48cGF0aCBkPSJNMTUgMTBIOSIvPjxwYXRoIGQ9Ik0xNyAzYTIgMiAwIDAgMSAyIDJ2MTVhMSAxIDAgMCAxLTEuNDk2Ljg2OGwtNC41MTItMi41NzhhMiAyIDAgMCAwLTEuOTg0IDBsLTQuNTEyIDIuNTc4QTEgMSAwIDAgMSA1IDIwVjVhMiAyIDAgMCAxIDItMnoiLz48L3N2Zz4=");
+      color: red;
+    }
+  }
+
+
+}
+
+.centerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 50px;
+
+  & .productInfo {
+    align-items: flex-start;
+  }
+
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: right;
+  gap: 80px;
+  margin-left: auto;
+}
+
+.ratingStars {
+  color: #f5da61;
+  font-size: 1.5rem;
+}
+
+.ratingNumber {
+  color: #565b64;
+  font-size: 1.5rem;
+}
+
+.price {
+  color: #3b3b3b;
+  font-size: 2rem;
+  font-weight: bold;
 }

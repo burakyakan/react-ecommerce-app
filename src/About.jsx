@@ -1,4 +1,5 @@
-import style from './About.module.css'
+import style from './About.module.css';
+import signature from './assets/signature.png'
 
 function About() {
 
@@ -26,7 +27,7 @@ function About() {
         <p className={`${style.centered} ${style.ceoNameRow}`}><span className={style.ceoName}>Burak Yakan</span></p>
         <p className={`${style.centered} ${style.ceoInfoRow}`}><span className={style.ceoInfo}>Kurucu & CEO @ BirazıBurada</span></p>
 
-        <img src="src\assets\signature.png" alt="İmza" />
+        <img src={signature} alt="İmza" />
 
       </div>
 

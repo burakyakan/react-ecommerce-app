@@ -78,6 +78,7 @@
 
 .specs span:not(:last-child)::after {
   content: " • ";
+  
 }
 
 .buttonBox {

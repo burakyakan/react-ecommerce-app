@@ -4,7 +4,7 @@ import CartedProduct from './CartedProduct';
 
 function Cart() {
 
-  const cartedProduct2 = [productsData[61], productsData[55], productsData[37]];
+  const cartedProduct2 = [productsData[61], productsData[55], productsData[37], productsData[85]];
 
 
   return (
@@ -30,8 +30,8 @@ function Cart() {
           <h3>Sepet Özeti</h3>
           <span>Ara Toplam: { }</span>
           <span>Kargo Ücreti: { }</span>
-          <div>
-            <input type="text" placeholder='Kupon Kodu Giriniz' />
+          <div className={style.promoCodeBox}>
+            <input maxLength={15} type="text" placeholder='Kupon Kodu Giriniz' />
             <button>Uygula</button>
           </div>
           <button className={style.toCheckOutButton}>Sepeti Onayla</button>
