@@ -4,7 +4,7 @@ import CartedProduct from './CartedProduct';
 
 function Cart() {
 
-  const cartedProduct2 = [productsData[61], productsData[55], productsData[37], productsData[85]];
+  const cartedProduct2 = [productsData[61], productsData[55], productsData[37], productsData[85], productsData[33], productsData[22], productsData[88], productsData[59], productsData[47], productsData[47]];
 
 
   return (

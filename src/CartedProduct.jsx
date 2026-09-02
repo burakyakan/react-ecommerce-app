@@ -81,12 +81,14 @@ function CartedProduct(props) {
           </div>
           <button className={style.removeItemButton} onClick={addToFavorites}></button>
           <button className={style.favoriteItemButton} onClick={addToFavorites}></button>
+          <button className={style.shareItemButton} onClick={addToFavorites}></button>
+
 
         </div>
       </div>
 
       <div className={style.rightContainer}>
-        <div>
+        <div className={style.ratingBox}>
           <span className={style.ratingStars}>{addRatingStars()}</span>
           <span className={style.ratingNumber}> {props.rating}</span>
         </div>

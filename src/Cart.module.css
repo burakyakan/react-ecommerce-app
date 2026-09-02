@@ -21,14 +21,15 @@
   border-radius: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  
 
   & h3 {
     color: #65522d;
     font-size: 3rem;
     line-height: 100%;
+    justify-content: start;
   }
-
 }
 
 .toCheckOutButton {
